@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().backgroundColor = UIColor.newGrey()
         UINavigationBar.appearance().tintColor = UIColor.diffGreen()
+        
+        GMSServices.provideAPIKey("AIzaSyAeYQF6v9KtP3mUYdOXp8m_fOYtctnIBEk")
         
         return true
     }
