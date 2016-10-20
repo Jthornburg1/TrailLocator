@@ -10,6 +10,8 @@ import UIKit
 import CoreData
 import Firebase
 import GoogleMaps
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,12 +28,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         GMSServices.provideAPIKey("AIzaSyAeYQF6v9KtP3mUYdOXp8m_fOYtctnIBEk")
         
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
         return true
     }
     
     override init() {
         FIRApp.configure()
         FIRDatabase.database().persistenceEnabled = true
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application,
+                                                                     open: url,
+                                                                     sourceApplication: sourceApplication,
+                                                                     annotation: annotation)
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        
+    }
+    
+    private func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return true
     }
 }
 

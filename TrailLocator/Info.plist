@@ -52,5 +52,18 @@
 	<array>
 		<string>comgooglemaps</string>
 	</array>
-</dict>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb301160596935272</string>
+            </array>
+        </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>301160596935272</string>
+    <key>FacebookDisplayName</key>
+    <string>TrailLocator</string>
+	</dict>
 </plist>

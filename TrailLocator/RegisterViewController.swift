@@ -8,12 +8,12 @@
 
 import Foundation
 import UIKit
+import FBSDKLoginKit
 
 class RegisterViewController: UIViewController {
     
     @IBOutlet weak var userTextHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var usernameSeparator: UIView!
-    @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var usernameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var emailText: UITextField!
@@ -22,10 +22,13 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-        photo.image = UIImage(named: "userPlaceHolder")
         segmentedControl.selectedSegmentIndex = 0
         uploadPhotoButton.layer.cornerRadius = 5
         submitButton.layer.cornerRadius = 5
+        
+        let fbLoginButton = FBSDKLoginButton()
+        //fbLoginButton.center = CGPoint(x:, y: <#T##CGFloat#>)
+        view.addSubview(fbLoginButton)
     }
     @IBAction func uploadPhotoClicked(_ sender: AnyObject) {
     }

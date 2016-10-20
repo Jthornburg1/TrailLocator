@@ -14,6 +14,9 @@ pod 'Firebase/Auth'
 pod 'GoogleMaps'
 pod 'GooglePlacePicker'
 pod 'GooglePlaces'
+pod 'Bolts'
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
 
   target 'TrailLocatorTests' do
     inherit! :search_paths

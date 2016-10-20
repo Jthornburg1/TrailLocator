@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -75,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfC-PQ-oDB" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527" y="357"/>
+            <point key="canvasLocation" x="1590" y="357"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6uX-HA-fyI">
@@ -93,7 +92,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kkv-Z6-P3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1097" y="357"/>
+            <point key="canvasLocation" x="847" y="357"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="EGI-bI-Hvf">
@@ -170,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8us-CZ-HA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527" y="-404"/>
+            <point key="canvasLocation" x="1590" y="-403"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="nDE-6s-r2T">
@@ -273,11 +272,6 @@
                                     <action selector="uploadPhotoClicked:" destination="Ek4-KG-3PV" eventType="touchUpInside" id="Kjx-Jd-Ta9"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pLH-mf-iy1">
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="pLH-mf-iy1" secondAttribute="height" multiplier="108:103" id="ZtJ-bO-fBR"/>
-                                </constraints>
-                            </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MjP-dz-3KY">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="09Z-wE-7gJ"/>
@@ -290,36 +284,47 @@
                                     <action selector="segmentValueChanged:" destination="Ek4-KG-3PV" eventType="valueChanged" id="4gI-kn-EXf"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSt-k8-mcZ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...or supply the following:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giI-I4-cNA">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pLH-mf-iy1" firstAttribute="top" secondItem="QGm-lk-5QH" secondAttribute="bottom" constant="7" id="5VQ-Hx-OTg"/>
-                            <constraint firstItem="L8U-Gi-UJe" firstAttribute="top" secondItem="pLH-mf-iy1" secondAttribute="bottom" constant="8" id="9us-ut-nN4"/>
+                            <constraint firstItem="TSt-k8-mcZ" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="92" id="0nO-XG-rfQ"/>
                             <constraint firstItem="MjP-dz-3KY" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="A9I-eO-JwF"/>
                             <constraint firstItem="yvf-eZ-xew" firstAttribute="top" secondItem="Lws-90-PA2" secondAttribute="bottom" constant="13" id="AE7-3q-os2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yvf-eZ-xew" secondAttribute="trailing" constant="16" id="AWT-Wj-hfn"/>
                             <constraint firstItem="MjP-dz-3KY" firstAttribute="top" secondItem="81p-mb-Z33" secondAttribute="bottom" constant="18" id="BGW-KC-dLL"/>
+                            <constraint firstItem="giI-I4-cNA" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="CMs-fr-4dH"/>
                             <constraint firstItem="50F-dB-X5G" firstAttribute="centerY" secondItem="M2Z-VQ-Bdr" secondAttribute="centerY" id="GFK-JZ-Xmb"/>
-                            <constraint firstItem="pLH-mf-iy1" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="84" id="ODY-EK-Q8H"/>
                             <constraint firstItem="MjP-dz-3KY" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="12" id="PRr-fL-axC"/>
                             <constraint firstItem="yvf-eZ-xew" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="16" id="Uy9-oO-vrg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TSt-k8-mcZ" secondAttribute="trailing" constant="93" id="Xth-iv-aeY"/>
                             <constraint firstItem="81p-mb-Z33" firstAttribute="top" secondItem="yvf-eZ-xew" secondAttribute="bottom" constant="13" id="dl3-CW-Y9i"/>
                             <constraint firstAttribute="trailingMargin" secondItem="81p-mb-Z33" secondAttribute="trailing" constant="16" id="dvX-5u-3B7"/>
                             <constraint firstItem="QGm-lk-5QH" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" id="gYi-5s-WSC"/>
                             <constraint firstItem="QGm-lk-5QH" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="-20" id="gk9-nB-0D5"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pLH-mf-iy1" secondAttribute="trailing" constant="88" id="ikO-xH-YSi"/>
                             <constraint firstAttribute="leadingMargin" secondItem="50F-dB-X5G" secondAttribute="leading" id="iyd-aG-Oud"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MjP-dz-3KY" secondAttribute="trailing" constant="12" id="nzJ-zF-M46"/>
                             <constraint firstItem="81p-mb-Z33" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="16" id="ox5-hB-cfa"/>
+                            <constraint firstItem="L8U-Gi-UJe" firstAttribute="top" secondItem="giI-I4-cNA" secondAttribute="bottom" constant="14.5" id="pQa-cO-iXe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="50F-dB-X5G" secondAttribute="trailing" id="qM3-k8-q1t"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QGm-lk-5QH" secondAttribute="trailing" constant="-20" id="tZJ-MS-3lh"/>
+                            <constraint firstItem="TSt-k8-mcZ" firstAttribute="top" secondItem="QGm-lk-5QH" secondAttribute="bottom" constant="9" id="uQB-AJ-Ygq"/>
+                            <constraint firstItem="giI-I4-cNA" firstAttribute="top" secondItem="TSt-k8-mcZ" secondAttribute="bottom" constant="128" id="uaQ-3t-bNe"/>
                             <constraint firstItem="50F-dB-X5G" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="zBD-jN-T3a"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="emailText" destination="Lws-90-PA2" id="mMN-rg-xXp"/>
                         <outlet property="passwordText" destination="DCZ-Yz-Yw1" id="Ymi-Iy-eSn"/>
-                        <outlet property="photo" destination="pLH-mf-iy1" id="slD-MI-tEC"/>
                         <outlet property="segmentedControl" destination="MjP-dz-3KY" id="Xjj-Q5-OIF"/>
                         <outlet property="submitButton" destination="81p-mb-Z33" id="EkL-ue-EhP"/>
                         <outlet property="uploadPhotoButton" destination="yvf-eZ-xew" id="t8Q-yq-gK3"/>
@@ -330,7 +335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGL-9z-OrX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1526" y="1177"/>
+            <point key="canvasLocation" x="1589.5999999999999" y="1176.1619190404799"/>
         </scene>
         <!--Details-->
         <scene sceneID="rvR-it-BT2">
@@ -370,7 +375,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IN7-UE-lL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960" y="357"/>
+            <point key="canvasLocation" x="2343" y="363"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="e11-hT-tuO">
@@ -423,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1k3-FA-9Iy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2385" y="357"/>
+            <point key="canvasLocation" x="3057" y="357"/>
         </scene>
     </scenes>
     <resources>
