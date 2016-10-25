@@ -23,14 +23,15 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
-        self.tableView.estimatedRowHeight = 80
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.isHidden = true
-        self.tableView.setNeedsLayout()
-        self.tableView.layoutIfNeeded()
-        self.textField.backgroundColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 0.6)
-        self.title = "Get To Trails"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.diffGreen()]
+        tableView.estimatedRowHeight = 80
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.isHidden = true
+        tableView.setNeedsLayout()
+        tableView.layoutIfNeeded()
+        navigationController?.navigationBar.isTranslucent = false
+        textField.backgroundColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 0.6)
+        title = "Get To Trails"
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
     }
     
     // Textfield delegate methods

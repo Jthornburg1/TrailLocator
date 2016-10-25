@@ -28,4 +28,12 @@ extension UIColor {
         let diffGreen = UIColor(r: 85, g: 187, b: 85)
         return diffGreen
     }
+    class func myOrange() -> UIColor {
+        let myOrange = UIColor(r: 255, g: 120, b: 0)
+        return myOrange
+    }
+    class func tryBlue() -> UIColor {
+        let tryBlue = UIColor(r: 30, g: 60, b: 133)
+        return tryBlue
+    }
 }

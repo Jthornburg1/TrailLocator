@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1vR-P7-pbV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1vR-P7-pbV">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -284,7 +284,7 @@
                                     <action selector="segmentValueChanged:" destination="Ek4-KG-3PV" eventType="valueChanged" id="4gI-kn-EXf"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSt-k8-mcZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSt-k8-mcZ">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -292,6 +292,28 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...or supply the following:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giI-I4-cNA">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0KM-t7-qIx">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMR-0R-pWQ" customClass="FBSDKLoginButton">
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="BMR-0R-pWQ" secondAttribute="trailing" constant="8" id="9Gp-81-APf"/>
+                                    <constraint firstItem="BMR-0R-pWQ" firstAttribute="leading" secondItem="0KM-t7-qIx" secondAttribute="leading" constant="8" id="BAu-fV-mTh"/>
+                                    <constraint firstAttribute="height" constant="113" id="L7K-EW-3pg"/>
+                                    <constraint firstAttribute="width" constant="148" id="UjO-ja-KWy"/>
+                                    <constraint firstAttribute="bottom" secondItem="BMR-0R-pWQ" secondAttribute="bottom" constant="30" id="iAv-hO-1tt"/>
+                                    <constraint firstItem="BMR-0R-pWQ" firstAttribute="top" secondItem="0KM-t7-qIx" secondAttribute="top" constant="16" id="oGN-u3-Xu4"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efe-Bf-sD8">
+                                <frame key="frameInset" minX="117" minY="39" width="142" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -304,11 +326,15 @@
                             <constraint firstItem="MjP-dz-3KY" firstAttribute="top" secondItem="81p-mb-Z33" secondAttribute="bottom" constant="18" id="BGW-KC-dLL"/>
                             <constraint firstItem="giI-I4-cNA" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="CMs-fr-4dH"/>
                             <constraint firstItem="50F-dB-X5G" firstAttribute="centerY" secondItem="M2Z-VQ-Bdr" secondAttribute="centerY" id="GFK-JZ-Xmb"/>
+                            <constraint firstItem="efe-Bf-sD8" firstAttribute="centerX" secondItem="QGm-lk-5QH" secondAttribute="centerX" id="MT5-g5-JsD"/>
                             <constraint firstItem="MjP-dz-3KY" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="12" id="PRr-fL-axC"/>
+                            <constraint firstItem="giI-I4-cNA" firstAttribute="top" secondItem="0KM-t7-qIx" secondAttribute="bottom" constant="13.5" id="QTd-nI-pKL"/>
+                            <constraint firstItem="0KM-t7-qIx" firstAttribute="top" secondItem="TSt-k8-mcZ" secondAttribute="bottom" constant="2.5" id="Ux5-iK-Ilo"/>
                             <constraint firstItem="yvf-eZ-xew" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="16" id="Uy9-oO-vrg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TSt-k8-mcZ" secondAttribute="trailing" constant="93" id="Xth-iv-aeY"/>
                             <constraint firstItem="81p-mb-Z33" firstAttribute="top" secondItem="yvf-eZ-xew" secondAttribute="bottom" constant="13" id="dl3-CW-Y9i"/>
                             <constraint firstAttribute="trailingMargin" secondItem="81p-mb-Z33" secondAttribute="trailing" constant="16" id="dvX-5u-3B7"/>
+                            <constraint firstItem="0KM-t7-qIx" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="evR-gv-t5M"/>
                             <constraint firstItem="QGm-lk-5QH" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" id="gYi-5s-WSC"/>
                             <constraint firstItem="QGm-lk-5QH" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="-20" id="gk9-nB-0D5"/>
                             <constraint firstAttribute="leadingMargin" secondItem="50F-dB-X5G" secondAttribute="leading" id="iyd-aG-Oud"/>
@@ -316,17 +342,20 @@
                             <constraint firstItem="81p-mb-Z33" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="16" id="ox5-hB-cfa"/>
                             <constraint firstItem="L8U-Gi-UJe" firstAttribute="top" secondItem="giI-I4-cNA" secondAttribute="bottom" constant="14.5" id="pQa-cO-iXe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="50F-dB-X5G" secondAttribute="trailing" id="qM3-k8-q1t"/>
+                            <constraint firstItem="QGm-lk-5QH" firstAttribute="top" secondItem="efe-Bf-sD8" secondAttribute="bottom" constant="-45" id="s6C-OC-eED"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QGm-lk-5QH" secondAttribute="trailing" constant="-20" id="tZJ-MS-3lh"/>
                             <constraint firstItem="TSt-k8-mcZ" firstAttribute="top" secondItem="QGm-lk-5QH" secondAttribute="bottom" constant="9" id="uQB-AJ-Ygq"/>
-                            <constraint firstItem="giI-I4-cNA" firstAttribute="top" secondItem="TSt-k8-mcZ" secondAttribute="bottom" constant="128" id="uaQ-3t-bNe"/>
                             <constraint firstItem="50F-dB-X5G" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="zBD-jN-T3a"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="emailText" destination="Lws-90-PA2" id="mMN-rg-xXp"/>
+                        <outlet property="fbLoginButton" destination="BMR-0R-pWQ" id="Bdf-eu-XeF"/>
+                        <outlet property="loginView" destination="0KM-t7-qIx" id="Pbg-vG-fsB"/>
                         <outlet property="passwordText" destination="DCZ-Yz-Yw1" id="Ymi-Iy-eSn"/>
                         <outlet property="segmentedControl" destination="MjP-dz-3KY" id="Xjj-Q5-OIF"/>
                         <outlet property="submitButton" destination="81p-mb-Z33" id="EkL-ue-EhP"/>
+                        <outlet property="topBar" destination="QGm-lk-5QH" id="q3A-9k-WzL"/>
                         <outlet property="uploadPhotoButton" destination="yvf-eZ-xew" id="t8Q-yq-gK3"/>
                         <outlet property="userTextHeightConstraint" destination="z3K-AE-tvD" id="04x-D5-ixv"/>
                         <outlet property="usernameSeparator" destination="ToY-jQ-AaE" id="ZdF-Md-lC8"/>

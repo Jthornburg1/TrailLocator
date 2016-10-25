@@ -65,5 +65,9 @@
     <string>301160596935272</string>
     <key>FacebookDisplayName</key>
     <string>TrailLocator</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbauth2</string>
+    </array>
 	</dict>
 </plist>

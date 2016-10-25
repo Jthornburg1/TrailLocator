@@ -23,8 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // deal with posibility of innappropriate material
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        UINavigationBar.appearance().backgroundColor = UIColor.newGrey()
-        UINavigationBar.appearance().tintColor = UIColor.diffGreen()
+        
+        UINavigationBar.appearance().barTintColor = UIColor.myOrange()
+        UINavigationBar.appearance().tintColor = UIColor.tryBlue()
         
         GMSServices.provideAPIKey("AIzaSyAeYQF6v9KtP3mUYdOXp8m_fOYtctnIBEk")
         
