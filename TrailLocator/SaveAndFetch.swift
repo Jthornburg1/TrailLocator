@@ -13,40 +13,25 @@ struct SaveAndFetch {
     
     let stack = Stack()
     
-    func saveOnePerson(_ name: String, age: Int, isStudent: Bool) {
-        
-        let entDesc = NSEntityDescription.entity(forEntityName: "PersonEntity", in: stack.managedObjectContext)
-        let person = NSManagedObject(entity: entDesc!, insertInto: stack.managedObjectContext)
-        
-        person.setValue(name, forKey: "name")
-        person.setValue(age, forKey: "age")
-        person.setValue(isStudent, forKey: "isStudent")
-        
-        do {
-            try stack.managedObjectContext.save()
-        } catch {
-            print(error)
+    func getContext() -> NSManagedObjectContext {
+        if #available(iOS 10.0, *) {
+            return stack.persistentContainer.viewContext
+        } else {
+            return NSManagedObjectContext()
         }
     }
     
-    func fetchPeople() -> [Person]? {
-        /*let fetchRequest = NSFetchRequest()
-        let entityDesc = NSEntityDescription.entity(forEntityName: "PersonEntity", in: stack.managedObjectContext)
-        fetchRequest.entity = entityDesc
-        
-        do {
-            let result = try stack.managedObjectContext.fetch(fetchRequest) as! [Person]
-            for p in result {
-                print(p.name!)
-                print(p.age!)
-                print("Is this person a student?: \(p.isStudent!)")
-            }
-            return result
-        } catch {
-            let fetchError = error as NSError
-            print(fetchError)
-            return nil
-        }*/
-        return nil
+    func storePerson(age: Int, name: String, isStudent: Bool) {
+        //Make managedObjectContext
+        let context = getContext()
+        //Instantiate entity
+        let entity = NSEntityDescription.entity(forEntityName: "PersonEntity", in: context)
+        let transc = NSManagedObject(entity: entity!, insertInto: context)
+        //Set values for entity
+        transc.setValue(age, forKey: "age")
+        transc.setValue(name, forKey: "name")
+        transc.setValue(isStudent, forKey: "isStudent")
     }
+    
+    
 }
