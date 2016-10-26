@@ -34,7 +34,6 @@ class DetailTableView: UITableViewController {
         
         self.tableView.setNeedsLayout()
         self.tableView.layoutIfNeeded()
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.diffGreen()]
     }
     
     @IBAction func mapButtonTapped(_ sender: AnyObject) {
