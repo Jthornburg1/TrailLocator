@@ -31,6 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        let firebaseGet = SprayFirebase()
+        firebaseGet.getEveryTrail { (dict, error) in
+            
+        }
+        
         return true
     }
     

@@ -90,4 +90,16 @@ struct SprayFirebase: AddTrails {
         ref.updateChildValues(childUpdates)
     }
     
+    func getEveryTrail(completion: @escaping (_ trails: [String : AnyObject]?, _ error: NSError?) -> Void) {
+        var dict = [String : AnyObject]()
+        ref.child("cities").observe(FIRDataEventType.value, with: { (snapShot) in
+            if let dct = snapShot.value as? [String : AnyObject] {
+                dict = dct
+                for (id, value) in dict {
+                    print(id)
+                    
+                }
+            }
+        })
+    }
 }
