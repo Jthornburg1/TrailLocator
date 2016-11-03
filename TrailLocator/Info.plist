@@ -30,6 +30,10 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Cocogoose Letterpress.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -50,24 +54,20 @@
 	</dict>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>comgooglemaps</string>
+		<string>fbauth2</string>
 	</array>
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>fb301160596935272</string>
-            </array>
-        </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>301160596935272</string>
-    <key>FacebookDisplayName</key>
-    <string>TrailLocator</string>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>fbauth2</string>
-    </array>
-	</dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb301160596935272</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>301160596935272</string>
+	<key>FacebookDisplayName</key>
+	<string>TrailLocator</string>
+</dict>
 </plist>

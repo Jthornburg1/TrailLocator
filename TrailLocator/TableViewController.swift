@@ -30,8 +30,8 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.layoutIfNeeded()
         navigationController?.navigationBar.isTranslucent = false
         textField.backgroundColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 0.6)
-        title = "Get To Trails"
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        title = "TRAIL LOCATOR"
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.tryBlue(), NSFontAttributeName: UIFont(name: "COCOGOOSELETTERPRESS", size: 20)!]
     }
     
     // Textfield delegate methods

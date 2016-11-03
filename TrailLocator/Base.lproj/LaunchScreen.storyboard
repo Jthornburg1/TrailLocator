@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cocogoose Letterpress.ttf">
+            <string>COCOGOOSELETTERPRESS</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -13,15 +20,37 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wasatch" translatesAutoresizingMaskIntoConstraints="NO" id="jCN-nT-dvt"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trail Locator" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwM-54-ftA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="TEC-JE-jfq"/>
+                                    <constraint firstAttribute="width" constant="184" id="vK4-Tc-Cqp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="COCOGOOSELETTERPRESS" family="COCOGOOSE LETTERPRESS" pointSize="41"/>
+                                <color key="textColor" red="0.35158953049327041" green="0.45478219696969702" blue="0.32924023760005922" alpha="0.94467905405405406" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jCN-nT-dvt" firstAttribute="leading" secondItem="bwM-54-ftA" secondAttribute="trailing" constant="-190" id="8eF-tz-g5g"/>
+                            <constraint firstItem="jCN-nT-dvt" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="Hre-gd-IJS"/>
+                            <constraint firstAttribute="trailing" secondItem="jCN-nT-dvt" secondAttribute="trailing" id="I3B-Zv-bNB"/>
+                            <constraint firstItem="jCN-nT-dvt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="RhC-Ik-0Ar"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jCN-nT-dvt" secondAttribute="bottom" id="ZCS-Es-Ets"/>
+                            <constraint firstItem="jCN-nT-dvt" firstAttribute="top" secondItem="bwM-54-ftA" secondAttribute="bottom" constant="-217" id="lbf-WZ-mbV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="69.599999999999994" y="135.38230884557723"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Wasatch" width="2448" height="3264"/>
+    </resources>
 </document>

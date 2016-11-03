@@ -16,6 +16,7 @@
 		D27E6F301D87575C00F5B48C /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E6F2F1D87575C00F5B48C /* Stack.swift */; };
 		D27E6F341D87593E00F5B48C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E6F321D87593E00F5B48C /* Person.swift */; };
 		D27E6F371D8759D200F5B48C /* SaveAndFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E6F361D8759D200F5B48C /* SaveAndFetch.swift */; };
+		D29891BB1DCB8CF200DE718F /* Cocogoose Letterpress.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D29891BA1DCB8C6400DE718F /* Cocogoose Letterpress.ttf */; };
 		D2A649131D79AF2100ACDF85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A649121D79AF2100ACDF85 /* AppDelegate.swift */; };
 		D2A649181D79AF2100ACDF85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A649161D79AF2100ACDF85 /* Main.storyboard */; };
 		D2A6491B1D79AF2100ACDF85 /* TrailLocator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2A649191D79AF2100ACDF85 /* TrailLocator.xcdatamodeld */; };
@@ -79,6 +80,7 @@
 		D27E6F2F1D87575C00F5B48C /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		D27E6F321D87593E00F5B48C /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = ../Person.swift; sourceTree = "<group>"; };
 		D27E6F361D8759D200F5B48C /* SaveAndFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveAndFetch.swift; sourceTree = "<group>"; };
+		D29891BA1DCB8C6400DE718F /* Cocogoose Letterpress.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocogoose Letterpress.ttf"; sourceTree = "<group>"; };
 		D2A6490F1D79AF2100ACDF85 /* TrailLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrailLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A649121D79AF2100ACDF85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2A649171D79AF2100ACDF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				D2A649121D79AF2100ACDF85 /* AppDelegate.swift */,
 				D2A649161D79AF2100ACDF85 /* Main.storyboard */,
 				D2A6491C1D79AF2100ACDF85 /* Assets.xcassets */,
+				D29891BA1DCB8C6400DE718F /* Cocogoose Letterpress.ttf */,
 				D2A6491E1D79AF2100ACDF85 /* LaunchScreen.storyboard */,
 				D2A6497D1D79BA0200ACDF85 /* GoogleService-Info.plist */,
 				D2A649211D79AF2100ACDF85 /* Info.plist */,
@@ -424,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29891BB1DCB8CF200DE718F /* Cocogoose Letterpress.ttf in Resources */,
 				D2A649791D79B4E800ACDF85 /* SettingsCell.xib in Resources */,
 				D2A6497E1D79BA0200ACDF85 /* GoogleService-Info.plist in Resources */,
 				D2A649201D79AF2100ACDF85 /* LaunchScreen.storyboard in Resources */,
