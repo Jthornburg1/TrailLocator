@@ -1,6 +1,0 @@
-framework module Pods_TrailLocatorTests {
-  umbrella header "Pods-TrailLocatorTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -87,10 +87,15 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate {
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         if Reachable.isConnectedToNetwork() {
             print("loggedIn")
-            let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-            FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
-                print("logged into both")
-            })
+            if let token = FBSDKAccessToken.current().tokenString {
+                let credential = FIRFacebookAuthProvider.credential(withAccessToken: token)
+                FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
+                    print("logged into both")
+                })
+
+            } else {
+                print("Fuck you.")
+            }
         } else {
             let alert = UIAlertController(title: "Error", message: "Your network connection is bad. Try logging in again when it's better.", preferredStyle: .alert)
             let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)

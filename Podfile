@@ -19,14 +19,5 @@ pod 'Bolts'
 pod 'FBSDKCoreKit'
 pod 'FBSDKLoginKit'
 
-  target 'TrailLocatorTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'TrailLocatorUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end
