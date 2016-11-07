@@ -1,2209 +1,918 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0428524D68697C6B1068AF13</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TrailLocatorUITests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-TrailLocatorUITests/Pods-TrailLocatorUITests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0E2161F4DD20EC47FAAB116B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>16D851B7DAF14DBA3F363247</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TrailLocatorTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-TrailLocatorTests/Pods-TrailLocatorTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1E6212BA46627DED74B82187</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>1F130643A37AD0DE63BA9624</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_TrailLocator.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1F75FBF35C64465C1786C939</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocatorTests/Pods-TrailLocatorTests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2378A9ABD2849F616D769502</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2CE4296D951F87FC7D015C75</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CE009874F9F547D7B40BC9FD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4A992FD3BCF76DF69D136FB1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TrailLocatorTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-TrailLocatorTests/Pods-TrailLocatorTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>544287908AC92CB6D7C97BCA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TrailLocator.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>562D166BE1DE3A8499CD9491</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TrailLocatorUITests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-TrailLocatorUITests/Pods-TrailLocatorUITests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6299B5531D2B6389770CE39D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>72D093AAFE6B00DB450C833B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>544287908AC92CB6D7C97BCA</string>
-				<string>D4D502DB872268A11EC606D8</string>
-				<string>16D851B7DAF14DBA3F363247</string>
-				<string>4A992FD3BCF76DF69D136FB1</string>
-				<string>562D166BE1DE3A8499CD9491</string>
-				<string>0428524D68697C6B1068AF13</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8E6B2514855204398B12E885</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocatorUITests/Pods-TrailLocatorUITests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>8F4CDD742D2882D9F894E60B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>964CD6F697088C2AE283B280</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1F130643A37AD0DE63BA9624</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9FF19F487073D27EAB19EE5D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1F130643A37AD0DE63BA9624</string>
-				<string>CE009874F9F547D7B40BC9FD</string>
-				<string>E1A6BA2845529652E660BF5D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A45AE3DECF25C6165F0C0DFF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocatorTests/Pods-TrailLocatorTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>B5A7B3D29A4F607BAE764ED8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1A6BA2845529652E660BF5D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BA65594F95548A1A04C9C4C3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>CE009874F9F547D7B40BC9FD</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_TrailLocatorTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D25FAC0E1DB42AD9001860A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>APIService.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D25FAC0F1DB42AD9001860A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D25FAC0E1DB42AD9001860A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D25FAC101DB42EF0001860A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Parser.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D25FAC111DB42EF0001860A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D25FAC101DB42EF0001860A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D25FAC121DB43374001860A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MakeTrailArray.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D25FAC131DB43374001860A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D25FAC121DB43374001860A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D27E6F2F1D87575C00F5B48C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Stack.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D27E6F301D87575C00F5B48C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D27E6F2F1D87575C00F5B48C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D27E6F321D87593E00F5B48C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Person.swift</string>
-			<key>path</key>
-			<string>../Person.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D27E6F341D87593E00F5B48C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D27E6F321D87593E00F5B48C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D27E6F351D8759B200F5B48C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D27E6F2F1D87575C00F5B48C</string>
-				<string>D2A649191D79AF2100ACDF85</string>
-				<string>D27E6F361D8759D200F5B48C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CoreData</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D27E6F361D8759D200F5B48C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SaveAndFetch.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D27E6F371D8759D200F5B48C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D27E6F361D8759D200F5B48C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D29891BA1DCB8C6400DE718F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>Cocogoose Letterpress.ttf</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D29891BB1DCB8CF200DE718F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D29891BA1DCB8C6400DE718F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649061D79AF2100ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A649111D79AF2100ACDF85</string>
-				<string>D2A649291D79AF2100ACDF85</string>
-				<string>D2A649341D79AF2100ACDF85</string>
-				<string>D2A649101D79AF2100ACDF85</string>
-				<string>72D093AAFE6B00DB450C833B</string>
-				<string>9FF19F487073D27EAB19EE5D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649071D79AF2100ACDF85</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0800</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Jon Thornburg</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>D2A6490E1D79AF2100ACDF85</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>DevelopmentTeam</key>
-						<string>3PMK8LZPU8</string>
-						<key>LastSwiftMigration</key>
-						<string>0800</string>
-					</dict>
-					<key>D2A649251D79AF2100ACDF85</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>LastSwiftMigration</key>
-						<string>0800</string>
-						<key>TestTargetID</key>
-						<string>D2A6490E1D79AF2100ACDF85</string>
-					</dict>
-					<key>D2A649301D79AF2100ACDF85</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>LastSwiftMigration</key>
-						<string>0800</string>
-						<key>TestTargetID</key>
-						<string>D2A6490E1D79AF2100ACDF85</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>D2A6490A1D79AF2100ACDF85</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>D2A649061D79AF2100ACDF85</string>
-			<key>productRefGroup</key>
-			<string>D2A649101D79AF2100ACDF85</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>D2A6490E1D79AF2100ACDF85</string>
-				<string>D2A649251D79AF2100ACDF85</string>
-				<string>D2A649301D79AF2100ACDF85</string>
-			</array>
-		</dict>
-		<key>D2A6490A1D79AF2100ACDF85</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D2A649381D79AF2100ACDF85</string>
-				<string>D2A649391D79AF2100ACDF85</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D2A6490B1D79AF2100ACDF85</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D2A6494B1D79B20F00ACDF85</string>
-				<string>D2A6496E1D79B42100ACDF85</string>
-				<string>D2A649641D79B38C00ACDF85</string>
-				<string>D2A6496A1D79B3C100ACDF85</string>
-				<string>D25FAC131DB43374001860A0</string>
-				<string>D2A6491B1D79AF2100ACDF85</string>
-				<string>D2A649681D79B3B500ACDF85</string>
-				<string>D2A649701D79B42F00ACDF85</string>
-				<string>D2A6495C1D79B2FC00ACDF85</string>
-				<string>D2A649531D79B22B00ACDF85</string>
-				<string>D2C71C261D8DCAC40093BA81</string>
-				<string>D27E6F301D87575C00F5B48C</string>
-				<string>D2A649721D79B43E00ACDF85</string>
-				<string>D25FAC111DB42EF0001860A0</string>
-				<string>D2A649451D79B1ED00ACDF85</string>
-				<string>D27E6F341D87593E00F5B48C</string>
-				<string>D2CAC3F01D7EFB920017E909</string>
-				<string>D2A649661D79B39C00ACDF85</string>
-				<string>D2A649511D79B22400ACDF85</string>
-				<string>D27E6F371D8759D200F5B48C</string>
-				<string>D2A6494F1D79B21B00ACDF85</string>
-				<string>D2A649131D79AF2100ACDF85</string>
-				<string>D25FAC0F1DB42AD9001860A0</string>
-				<string>D2A6494D1D79B21500ACDF85</string>
-				<string>D2A6497C1D79B8A800ACDF85</string>
-				<string>D2A6496C1D79B3F400ACDF85</string>
-				<string>D2A649491D79B20000ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D2A6490C1D79AF2100ACDF85</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>964CD6F697088C2AE283B280</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D2A6490D1D79AF2100ACDF85</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D29891BB1DCB8CF200DE718F</string>
-				<string>D2A649791D79B4E800ACDF85</string>
-				<string>D2A6497E1D79BA0200ACDF85</string>
-				<string>D2A649201D79AF2100ACDF85</string>
-				<string>D2A6491D1D79AF2100ACDF85</string>
-				<string>D2A649751D79B4D500ACDF85</string>
-				<string>D2A649181D79AF2100ACDF85</string>
-				<string>D2A649771D79B4DD00ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D2A6490E1D79AF2100ACDF85</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D2A6493A1D79AF2100ACDF85</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0E2161F4DD20EC47FAAB116B</string>
-				<string>D2A6490B1D79AF2100ACDF85</string>
-				<string>D2A6490C1D79AF2100ACDF85</string>
-				<string>D2A6490D1D79AF2100ACDF85</string>
-				<string>6299B5531D2B6389770CE39D</string>
-				<string>2378A9ABD2849F616D769502</string>
-				<string>1E6212BA46627DED74B82187</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TrailLocator</string>
-			<key>productName</key>
-			<string>TrailLocator</string>
-			<key>productReference</key>
-			<string>D2A6490F1D79AF2100ACDF85</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>D2A6490F1D79AF2100ACDF85</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TrailLocator.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D2A649101D79AF2100ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A6490F1D79AF2100ACDF85</string>
-				<string>D2A649261D79AF2100ACDF85</string>
-				<string>D2A649311D79AF2100ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649111D79AF2100ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A6497A1D79B89800ACDF85</string>
-				<string>D2A649731D79B4A700ACDF85</string>
-				<string>D2A649621D79B37400ACDF85</string>
-				<string>D2A6495D1D79B31200ACDF85</string>
-				<string>D2A6495A1D79B2E300ACDF85</string>
-				<string>D2A649431D79B1DE00ACDF85</string>
-				<string>D2A649121D79AF2100ACDF85</string>
-				<string>D2A649161D79AF2100ACDF85</string>
-				<string>D2A6491C1D79AF2100ACDF85</string>
-				<string>D29891BA1DCB8C6400DE718F</string>
-				<string>D2A6491E1D79AF2100ACDF85</string>
-				<string>D2A6497D1D79BA0200ACDF85</string>
-				<string>D2A649211D79AF2100ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TrailLocator</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649121D79AF2100ACDF85</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649131D79AF2100ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649121D79AF2100ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649161D79AF2100ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A649171D79AF2100ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649171D79AF2100ACDF85</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649181D79AF2100ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649161D79AF2100ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649191D79AF2100ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A6491A1D79AF2100ACDF85</string>
-			</array>
-			<key>currentVersion</key>
-			<string>D2A6491A1D79AF2100ACDF85</string>
-			<key>isa</key>
-			<string>XCVersionGroup</string>
-			<key>path</key>
-			<string>TrailLocator.xcdatamodeld</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>versionGroupType</key>
-			<string>wrapper.xcdatamodel</string>
-		</dict>
-		<key>D2A6491A1D79AF2100ACDF85</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.xcdatamodel</string>
-			<key>path</key>
-			<string>TrailLocator.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6491B1D79AF2100ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649191D79AF2100ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A6491C1D79AF2100ACDF85</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6491D1D79AF2100ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A6491C1D79AF2100ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A6491E1D79AF2100ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A6491F1D79AF2100ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6491F1D79AF2100ACDF85</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649201D79AF2100ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A6491E1D79AF2100ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649211D79AF2100ACDF85</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649221D79AF2100ACDF85</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D2A6492B1D79AF2100ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D2A649231D79AF2100ACDF85</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2CE4296D951F87FC7D015C75</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D2A649241D79AF2100ACDF85</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D2A649251D79AF2100ACDF85</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D2A6493D1D79AF2100ACDF85</string>
-			<key>buildPhases</key>
-			<array>
-				<string>8F4CDD742D2882D9F894E60B</string>
-				<string>D2A649221D79AF2100ACDF85</string>
-				<string>D2A649231D79AF2100ACDF85</string>
-				<string>D2A649241D79AF2100ACDF85</string>
-				<string>1F75FBF35C64465C1786C939</string>
-				<string>A45AE3DECF25C6165F0C0DFF</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>D2A649281D79AF2100ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TrailLocatorTests</string>
-			<key>productName</key>
-			<string>TrailLocatorTests</string>
-			<key>productReference</key>
-			<string>D2A649261D79AF2100ACDF85</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>D2A649261D79AF2100ACDF85</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TrailLocatorTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D2A649271D79AF2100ACDF85</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D2A649071D79AF2100ACDF85</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D2A6490E1D79AF2100ACDF85</string>
-			<key>remoteInfo</key>
-			<string>TrailLocator</string>
-		</dict>
-		<key>D2A649281D79AF2100ACDF85</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>D2A6490E1D79AF2100ACDF85</string>
-			<key>targetProxy</key>
-			<string>D2A649271D79AF2100ACDF85</string>
-		</dict>
-		<key>D2A649291D79AF2100ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A6492A1D79AF2100ACDF85</string>
-				<string>D2A6492C1D79AF2100ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TrailLocatorTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6492A1D79AF2100ACDF85</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>TrailLocatorTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6492B1D79AF2100ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A6492A1D79AF2100ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A6492C1D79AF2100ACDF85</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6492D1D79AF2100ACDF85</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D2A649361D79AF2100ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D2A6492E1D79AF2100ACDF85</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B5A7B3D29A4F607BAE764ED8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D2A6492F1D79AF2100ACDF85</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D2A649301D79AF2100ACDF85</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D2A649401D79AF2100ACDF85</string>
-			<key>buildPhases</key>
-			<array>
-				<string>BA65594F95548A1A04C9C4C3</string>
-				<string>D2A6492D1D79AF2100ACDF85</string>
-				<string>D2A6492E1D79AF2100ACDF85</string>
-				<string>D2A6492F1D79AF2100ACDF85</string>
-				<string>8E6B2514855204398B12E885</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>D2A649331D79AF2100ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TrailLocatorUITests</string>
-			<key>productName</key>
-			<string>TrailLocatorUITests</string>
-			<key>productReference</key>
-			<string>D2A649311D79AF2100ACDF85</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>D2A649311D79AF2100ACDF85</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TrailLocatorUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D2A649321D79AF2100ACDF85</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D2A649071D79AF2100ACDF85</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D2A6490E1D79AF2100ACDF85</string>
-			<key>remoteInfo</key>
-			<string>TrailLocator</string>
-		</dict>
-		<key>D2A649331D79AF2100ACDF85</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>D2A6490E1D79AF2100ACDF85</string>
-			<key>targetProxy</key>
-			<string>D2A649321D79AF2100ACDF85</string>
-		</dict>
-		<key>D2A649341D79AF2100ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A649351D79AF2100ACDF85</string>
-				<string>D2A649371D79AF2100ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TrailLocatorUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649351D79AF2100ACDF85</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>TrailLocatorUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649361D79AF2100ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649351D79AF2100ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649371D79AF2100ACDF85</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649381D79AF2100ACDF85</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D2A649391D79AF2100ACDF85</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Owholemodule</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D2A6493A1D79AF2100ACDF85</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D2A6493B1D79AF2100ACDF85</string>
-				<string>D2A6493C1D79AF2100ACDF85</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D2A6493B1D79AF2100ACDF85</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>544287908AC92CB6D7C97BCA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>3PMK8LZPU8</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TrailLocator/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>clickHereLabs.TrailLocator</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D2A6493C1D79AF2100ACDF85</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D4D502DB872268A11EC606D8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>3PMK8LZPU8</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TrailLocator/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>clickHereLabs.TrailLocator</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D2A6493D1D79AF2100ACDF85</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D2A6493E1D79AF2100ACDF85</string>
-				<string>D2A6493F1D79AF2100ACDF85</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D2A6493E1D79AF2100ACDF85</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>16D851B7DAF14DBA3F363247</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TrailLocatorTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>clickHereLabs.TrailLocatorTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TrailLocator.app/TrailLocator</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D2A6493F1D79AF2100ACDF85</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4A992FD3BCF76DF69D136FB1</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TrailLocatorTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>clickHereLabs.TrailLocatorTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TrailLocator.app/TrailLocator</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D2A649401D79AF2100ACDF85</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D2A649411D79AF2100ACDF85</string>
-				<string>D2A649421D79AF2100ACDF85</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D2A649411D79AF2100ACDF85</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>562D166BE1DE3A8499CD9491</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>TrailLocatorUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>clickHereLabs.TrailLocatorUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>TrailLocator</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D2A649421D79AF2100ACDF85</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0428524D68697C6B1068AF13</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>TrailLocatorUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>clickHereLabs.TrailLocatorUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>TrailLocator</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D2A649431D79B1DE00ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D27E6F351D8759B200F5B48C</string>
-				<string>D2A6496B1D79B3F400ACDF85</string>
-				<string>D2A649441D79B1ED00ACDF85</string>
-				<string>D2A6494A1D79B20F00ACDF85</string>
-				<string>D2A6494C1D79B21500ACDF85</string>
-				<string>D2A6494E1D79B21B00ACDF85</string>
-				<string>D2A649501D79B22400ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Utilities</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649441D79B1ED00ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Reachable.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649451D79B1ED00ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649441D79B1ED00ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649481D79B20000ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>JsonDigger.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649491D79B20000ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649481D79B20000ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A6494A1D79B20F00ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>String + extensions.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6494B1D79B20F00ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A6494A1D79B20F00ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A6494C1D79B21500ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>UIImageView+Extensions.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6494D1D79B21500ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A6494C1D79B21500ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A6494E1D79B21B00ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>PropertySorter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6494F1D79B21B00ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A6494E1D79B21B00ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649501D79B22400ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MapTrail.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649511D79B22400ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649501D79B22400ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649521D79B22B00ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>UIColor + Extensions.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649531D79B22B00ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649521D79B22B00ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A6495A1D79B2E300ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A649521D79B22B00ACDF85</string>
-				<string>D27E6F321D87593E00F5B48C</string>
-				<string>D2A6495B1D79B2FC00ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Models</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6495B1D79B2FC00ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>TrailDict.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6495C1D79B2FC00ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A6495B1D79B2FC00ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A6495D1D79B31200ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D25FAC0E1DB42AD9001860A0</string>
-				<string>D25FAC101DB42EF0001860A0</string>
-				<string>D25FAC121DB43374001860A0</string>
-				<string>D2A649481D79B20000ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>WebServices</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649621D79B37400ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A649631D79B38C00ACDF85</string>
-				<string>D2A649651D79B39C00ACDF85</string>
-				<string>D2A649671D79B3B500ACDF85</string>
-				<string>D2A649691D79B3C100ACDF85</string>
-				<string>D2A6496D1D79B42100ACDF85</string>
-				<string>D2A6496F1D79B42F00ACDF85</string>
-				<string>D2A649711D79B43E00ACDF85</string>
-				<string>D2CAC3EF1D7EFB920017E909</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ViewControllers + Cells</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649631D79B38C00ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>TableViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649641D79B38C00ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649631D79B38C00ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649651D79B39C00ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DetailTableView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649661D79B39C00ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649651D79B39C00ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649671D79B3B500ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SettingsViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649681D79B3B500ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649671D79B3B500ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649691D79B3C100ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>WebViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6496A1D79B3C100ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649691D79B3C100ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A6496B1D79B3F400ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ConfigureCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6496C1D79B3F400ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A6496B1D79B3F400ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A6496D1D79B42100ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CustomCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6496E1D79B42100ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A6496D1D79B42100ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A6496F1D79B42F00ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DetailCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649701D79B42F00ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A6496F1D79B42F00ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649711D79B43E00ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SettingsCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649721D79B43E00ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649711D79B43E00ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649731D79B4A700ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A649741D79B4D500ACDF85</string>
-				<string>D2A649761D79B4DD00ACDF85</string>
-				<string>D2A649781D79B4E800ACDF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>UIFiles</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649741D79B4D500ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>CustomCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649751D79B4D500ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649741D79B4D500ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649761D79B4DD00ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>DetailCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649771D79B4DD00ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649761D79B4DD00ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A649781D79B4E800ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>SettingsCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A649791D79B4E800ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A649781D79B4E800ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A6497A1D79B89800ACDF85</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A6497B1D79B8A800ACDF85</string>
-				<string>D2C71C251D8DCAC40093BA81</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Firebase</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6497B1D79B8A800ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>FirebaseGet.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6497C1D79B8A800ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A6497B1D79B8A800ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A6497D1D79BA0200ACDF85</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>GoogleService-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A6497E1D79BA0200ACDF85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A6497D1D79BA0200ACDF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2C71C251D8DCAC40093BA81</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>FirebaseAuth.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2C71C261D8DCAC40093BA81</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2C71C251D8DCAC40093BA81</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2CAC3EF1D7EFB920017E909</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>RegisterViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2CAC3F01D7EFB920017E909</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2CAC3EF1D7EFB920017E909</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4D502DB872268A11EC606D8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TrailLocator.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1A6BA2845529652E660BF5D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_TrailLocatorUITests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D2A649071D79AF2100ACDF85</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CE4296D951F87FC7D015C75 /* Pods_TrailLocatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE009874F9F547D7B40BC9FD /* Pods_TrailLocatorTests.framework */; };
+		964CD6F697088C2AE283B280 /* Pods_TrailLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F130643A37AD0DE63BA9624 /* Pods_TrailLocator.framework */; };
+		B5A7B3D29A4F607BAE764ED8 /* Pods_TrailLocatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A6BA2845529652E660BF5D /* Pods_TrailLocatorUITests.framework */; };
+		D25FAC0F1DB42AD9001860A0 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25FAC0E1DB42AD9001860A0 /* APIService.swift */; };
+		D25FAC111DB42EF0001860A0 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25FAC101DB42EF0001860A0 /* Parser.swift */; };
+		D25FAC131DB43374001860A0 /* MakeTrailArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25FAC121DB43374001860A0 /* MakeTrailArray.swift */; };
+		D27E6F301D87575C00F5B48C /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E6F2F1D87575C00F5B48C /* Stack.swift */; };
+		D27E6F341D87593E00F5B48C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E6F321D87593E00F5B48C /* Person.swift */; };
+		D27E6F371D8759D200F5B48C /* SaveAndFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E6F361D8759D200F5B48C /* SaveAndFetch.swift */; };
+		D29891BB1DCB8CF200DE718F /* Cocogoose Letterpress.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D29891BA1DCB8C6400DE718F /* Cocogoose Letterpress.ttf */; };
+		D2A649131D79AF2100ACDF85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A649121D79AF2100ACDF85 /* AppDelegate.swift */; };
+		D2A649181D79AF2100ACDF85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A649161D79AF2100ACDF85 /* Main.storyboard */; };
+		D2A6491B1D79AF2100ACDF85 /* TrailLocator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2A649191D79AF2100ACDF85 /* TrailLocator.xcdatamodeld */; };
+		D2A6491D1D79AF2100ACDF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A6491C1D79AF2100ACDF85 /* Assets.xcassets */; };
+		D2A649201D79AF2100ACDF85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A6491E1D79AF2100ACDF85 /* LaunchScreen.storyboard */; };
+		D2A6492B1D79AF2100ACDF85 /* TrailLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6492A1D79AF2100ACDF85 /* TrailLocatorTests.swift */; };
+		D2A649361D79AF2100ACDF85 /* TrailLocatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A649351D79AF2100ACDF85 /* TrailLocatorUITests.swift */; };
+		D2A649451D79B1ED00ACDF85 /* Reachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A649441D79B1ED00ACDF85 /* Reachable.swift */; };
+		D2A649491D79B20000ACDF85 /* JsonDigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A649481D79B20000ACDF85 /* JsonDigger.swift */; };
+		D2A6494B1D79B20F00ACDF85 /* String + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6494A1D79B20F00ACDF85 /* String + extensions.swift */; };
+		D2A6494D1D79B21500ACDF85 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6494C1D79B21500ACDF85 /* UIImageView+Extensions.swift */; };
+		D2A6494F1D79B21B00ACDF85 /* PropertySorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6494E1D79B21B00ACDF85 /* PropertySorter.swift */; };
+		D2A649511D79B22400ACDF85 /* MapTrail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A649501D79B22400ACDF85 /* MapTrail.swift */; };
+		D2A649531D79B22B00ACDF85 /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A649521D79B22B00ACDF85 /* UIColor + Extensions.swift */; };
+		D2A6495C1D79B2FC00ACDF85 /* TrailDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6495B1D79B2FC00ACDF85 /* TrailDict.swift */; };
+		D2A649641D79B38C00ACDF85 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A649631D79B38C00ACDF85 /* TableViewController.swift */; };
+		D2A649661D79B39C00ACDF85 /* DetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A649651D79B39C00ACDF85 /* DetailTableView.swift */; };
+		D2A649681D79B3B500ACDF85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A649671D79B3B500ACDF85 /* SettingsViewController.swift */; };
+		D2A6496A1D79B3C100ACDF85 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A649691D79B3C100ACDF85 /* WebViewController.swift */; };
+		D2A6496C1D79B3F400ACDF85 /* ConfigureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6496B1D79B3F400ACDF85 /* ConfigureCell.swift */; };
+		D2A6496E1D79B42100ACDF85 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6496D1D79B42100ACDF85 /* CustomCell.swift */; };
+		D2A649701D79B42F00ACDF85 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6496F1D79B42F00ACDF85 /* DetailCell.swift */; };
+		D2A649721D79B43E00ACDF85 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A649711D79B43E00ACDF85 /* SettingsCell.swift */; };
+		D2A649751D79B4D500ACDF85 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A649741D79B4D500ACDF85 /* CustomCell.xib */; };
+		D2A649771D79B4DD00ACDF85 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A649761D79B4DD00ACDF85 /* DetailCell.xib */; };
+		D2A649791D79B4E800ACDF85 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A649781D79B4E800ACDF85 /* SettingsCell.xib */; };
+		D2A6497C1D79B8A800ACDF85 /* FirebaseGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6497B1D79B8A800ACDF85 /* FirebaseGet.swift */; };
+		D2A6497E1D79BA0200ACDF85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2A6497D1D79BA0200ACDF85 /* GoogleService-Info.plist */; };
+		D2C71C261D8DCAC40093BA81 /* FirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C71C251D8DCAC40093BA81 /* FirebaseAuth.swift */; };
+		D2CAC3F01D7EFB920017E909 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAC3EF1D7EFB920017E909 /* RegisterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2A649271D79AF2100ACDF85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2A649071D79AF2100ACDF85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2A6490E1D79AF2100ACDF85;
+			remoteInfo = TrailLocator;
+		};
+		D2A649321D79AF2100ACDF85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2A649071D79AF2100ACDF85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2A6490E1D79AF2100ACDF85;
+			remoteInfo = TrailLocator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0428524D68697C6B1068AF13 /* Pods-TrailLocatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocatorUITests/Pods-TrailLocatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		16D851B7DAF14DBA3F363247 /* Pods-TrailLocatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocatorTests/Pods-TrailLocatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F130643A37AD0DE63BA9624 /* Pods_TrailLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrailLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A992FD3BCF76DF69D136FB1 /* Pods-TrailLocatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocatorTests/Pods-TrailLocatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		544287908AC92CB6D7C97BCA /* Pods-TrailLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator.debug.xcconfig"; sourceTree = "<group>"; };
+		562D166BE1DE3A8499CD9491 /* Pods-TrailLocatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocatorUITests/Pods-TrailLocatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE009874F9F547D7B40BC9FD /* Pods_TrailLocatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrailLocatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25FAC0E1DB42AD9001860A0 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		D25FAC101DB42EF0001860A0 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		D25FAC121DB43374001860A0 /* MakeTrailArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeTrailArray.swift; sourceTree = "<group>"; };
+		D27E6F2F1D87575C00F5B48C /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		D27E6F321D87593E00F5B48C /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = ../Person.swift; sourceTree = "<group>"; };
+		D27E6F361D8759D200F5B48C /* SaveAndFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveAndFetch.swift; sourceTree = "<group>"; };
+		D2832EF51DD0BEBC00CFD92D /* TrailLocator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrailLocator.entitlements; sourceTree = "<group>"; };
+		D29891BA1DCB8C6400DE718F /* Cocogoose Letterpress.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocogoose Letterpress.ttf"; sourceTree = "<group>"; };
+		D2A6490F1D79AF2100ACDF85 /* TrailLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrailLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A649121D79AF2100ACDF85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2A649171D79AF2100ACDF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2A6491A1D79AF2100ACDF85 /* TrailLocator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrailLocator.xcdatamodel; sourceTree = "<group>"; };
+		D2A6491C1D79AF2100ACDF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2A6491F1D79AF2100ACDF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2A649211D79AF2100ACDF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A649261D79AF2100ACDF85 /* TrailLocatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrailLocatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A6492A1D79AF2100ACDF85 /* TrailLocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailLocatorTests.swift; sourceTree = "<group>"; };
+		D2A6492C1D79AF2100ACDF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A649311D79AF2100ACDF85 /* TrailLocatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrailLocatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A649351D79AF2100ACDF85 /* TrailLocatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailLocatorUITests.swift; sourceTree = "<group>"; };
+		D2A649371D79AF2100ACDF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A649441D79B1ED00ACDF85 /* Reachable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachable.swift; sourceTree = "<group>"; };
+		D2A649481D79B20000ACDF85 /* JsonDigger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDigger.swift; sourceTree = "<group>"; };
+		D2A6494A1D79B20F00ACDF85 /* String + extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String + extensions.swift"; sourceTree = "<group>"; };
+		D2A6494C1D79B21500ACDF85 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		D2A6494E1D79B21B00ACDF85 /* PropertySorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertySorter.swift; sourceTree = "<group>"; };
+		D2A649501D79B22400ACDF85 /* MapTrail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTrail.swift; sourceTree = "<group>"; };
+		D2A649521D79B22B00ACDF85 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
+		D2A6495B1D79B2FC00ACDF85 /* TrailDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailDict.swift; sourceTree = "<group>"; };
+		D2A649631D79B38C00ACDF85 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D2A649651D79B39C00ACDF85 /* DetailTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableView.swift; sourceTree = "<group>"; };
+		D2A649671D79B3B500ACDF85 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D2A649691D79B3C100ACDF85 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		D2A6496B1D79B3F400ACDF85 /* ConfigureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureCell.swift; sourceTree = "<group>"; };
+		D2A6496D1D79B42100ACDF85 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		D2A6496F1D79B42F00ACDF85 /* DetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		D2A649711D79B43E00ACDF85 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		D2A649741D79B4D500ACDF85 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		D2A649761D79B4DD00ACDF85 /* DetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		D2A649781D79B4E800ACDF85 /* SettingsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
+		D2A6497B1D79B8A800ACDF85 /* FirebaseGet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseGet.swift; sourceTree = "<group>"; };
+		D2A6497D1D79BA0200ACDF85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2C71C251D8DCAC40093BA81 /* FirebaseAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuth.swift; sourceTree = "<group>"; };
+		D2CAC3EF1D7EFB920017E909 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D4D502DB872268A11EC606D8 /* Pods-TrailLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocator.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator.release.xcconfig"; sourceTree = "<group>"; };
+		E1A6BA2845529652E660BF5D /* Pods_TrailLocatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrailLocatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2A6490C1D79AF2100ACDF85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964CD6F697088C2AE283B280 /* Pods_TrailLocator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A649231D79AF2100ACDF85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE4296D951F87FC7D015C75 /* Pods_TrailLocatorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6492E1D79AF2100ACDF85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A7B3D29A4F607BAE764ED8 /* Pods_TrailLocatorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72D093AAFE6B00DB450C833B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				544287908AC92CB6D7C97BCA /* Pods-TrailLocator.debug.xcconfig */,
+				D4D502DB872268A11EC606D8 /* Pods-TrailLocator.release.xcconfig */,
+				16D851B7DAF14DBA3F363247 /* Pods-TrailLocatorTests.debug.xcconfig */,
+				4A992FD3BCF76DF69D136FB1 /* Pods-TrailLocatorTests.release.xcconfig */,
+				562D166BE1DE3A8499CD9491 /* Pods-TrailLocatorUITests.debug.xcconfig */,
+				0428524D68697C6B1068AF13 /* Pods-TrailLocatorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9FF19F487073D27EAB19EE5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F130643A37AD0DE63BA9624 /* Pods_TrailLocator.framework */,
+				CE009874F9F547D7B40BC9FD /* Pods_TrailLocatorTests.framework */,
+				E1A6BA2845529652E660BF5D /* Pods_TrailLocatorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D27E6F351D8759B200F5B48C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D27E6F2F1D87575C00F5B48C /* Stack.swift */,
+				D2A649191D79AF2100ACDF85 /* TrailLocator.xcdatamodeld */,
+				D27E6F361D8759D200F5B48C /* SaveAndFetch.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		D2A649061D79AF2100ACDF85 = {
+			isa = PBXGroup;
+			children = (
+				D2A649111D79AF2100ACDF85 /* TrailLocator */,
+				D2A649291D79AF2100ACDF85 /* TrailLocatorTests */,
+				D2A649341D79AF2100ACDF85 /* TrailLocatorUITests */,
+				D2A649101D79AF2100ACDF85 /* Products */,
+				72D093AAFE6B00DB450C833B /* Pods */,
+				9FF19F487073D27EAB19EE5D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2A649101D79AF2100ACDF85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2A6490F1D79AF2100ACDF85 /* TrailLocator.app */,
+				D2A649261D79AF2100ACDF85 /* TrailLocatorTests.xctest */,
+				D2A649311D79AF2100ACDF85 /* TrailLocatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2A649111D79AF2100ACDF85 /* TrailLocator */ = {
+			isa = PBXGroup;
+			children = (
+				D2832EF51DD0BEBC00CFD92D /* TrailLocator.entitlements */,
+				D2A6497A1D79B89800ACDF85 /* Firebase */,
+				D2A649731D79B4A700ACDF85 /* UIFiles */,
+				D2A649621D79B37400ACDF85 /* ViewControllers + Cells */,
+				D2A6495D1D79B31200ACDF85 /* WebServices */,
+				D2A6495A1D79B2E300ACDF85 /* Models */,
+				D2A649431D79B1DE00ACDF85 /* Utilities */,
+				D2A649121D79AF2100ACDF85 /* AppDelegate.swift */,
+				D2A649161D79AF2100ACDF85 /* Main.storyboard */,
+				D2A6491C1D79AF2100ACDF85 /* Assets.xcassets */,
+				D29891BA1DCB8C6400DE718F /* Cocogoose Letterpress.ttf */,
+				D2A6491E1D79AF2100ACDF85 /* LaunchScreen.storyboard */,
+				D2A6497D1D79BA0200ACDF85 /* GoogleService-Info.plist */,
+				D2A649211D79AF2100ACDF85 /* Info.plist */,
+			);
+			path = TrailLocator;
+			sourceTree = "<group>";
+		};
+		D2A649291D79AF2100ACDF85 /* TrailLocatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2A6492A1D79AF2100ACDF85 /* TrailLocatorTests.swift */,
+				D2A6492C1D79AF2100ACDF85 /* Info.plist */,
+			);
+			path = TrailLocatorTests;
+			sourceTree = "<group>";
+		};
+		D2A649341D79AF2100ACDF85 /* TrailLocatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2A649351D79AF2100ACDF85 /* TrailLocatorUITests.swift */,
+				D2A649371D79AF2100ACDF85 /* Info.plist */,
+			);
+			path = TrailLocatorUITests;
+			sourceTree = "<group>";
+		};
+		D2A649431D79B1DE00ACDF85 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D27E6F351D8759B200F5B48C /* CoreData */,
+				D2A6496B1D79B3F400ACDF85 /* ConfigureCell.swift */,
+				D2A649441D79B1ED00ACDF85 /* Reachable.swift */,
+				D2A6494A1D79B20F00ACDF85 /* String + extensions.swift */,
+				D2A6494C1D79B21500ACDF85 /* UIImageView+Extensions.swift */,
+				D2A6494E1D79B21B00ACDF85 /* PropertySorter.swift */,
+				D2A649501D79B22400ACDF85 /* MapTrail.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		D2A6495A1D79B2E300ACDF85 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2A649521D79B22B00ACDF85 /* UIColor + Extensions.swift */,
+				D27E6F321D87593E00F5B48C /* Person.swift */,
+				D2A6495B1D79B2FC00ACDF85 /* TrailDict.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D2A6495D1D79B31200ACDF85 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				D25FAC0E1DB42AD9001860A0 /* APIService.swift */,
+				D25FAC101DB42EF0001860A0 /* Parser.swift */,
+				D25FAC121DB43374001860A0 /* MakeTrailArray.swift */,
+				D2A649481D79B20000ACDF85 /* JsonDigger.swift */,
+			);
+			name = WebServices;
+			sourceTree = "<group>";
+		};
+		D2A649621D79B37400ACDF85 /* ViewControllers + Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D2A649631D79B38C00ACDF85 /* TableViewController.swift */,
+				D2A649651D79B39C00ACDF85 /* DetailTableView.swift */,
+				D2A649671D79B3B500ACDF85 /* SettingsViewController.swift */,
+				D2A649691D79B3C100ACDF85 /* WebViewController.swift */,
+				D2A6496D1D79B42100ACDF85 /* CustomCell.swift */,
+				D2A6496F1D79B42F00ACDF85 /* DetailCell.swift */,
+				D2A649711D79B43E00ACDF85 /* SettingsCell.swift */,
+				D2CAC3EF1D7EFB920017E909 /* RegisterViewController.swift */,
+			);
+			name = "ViewControllers + Cells";
+			sourceTree = "<group>";
+		};
+		D2A649731D79B4A700ACDF85 /* UIFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D2A649741D79B4D500ACDF85 /* CustomCell.xib */,
+				D2A649761D79B4DD00ACDF85 /* DetailCell.xib */,
+				D2A649781D79B4E800ACDF85 /* SettingsCell.xib */,
+			);
+			name = UIFiles;
+			sourceTree = "<group>";
+		};
+		D2A6497A1D79B89800ACDF85 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				D2A6497B1D79B8A800ACDF85 /* FirebaseGet.swift */,
+				D2C71C251D8DCAC40093BA81 /* FirebaseAuth.swift */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2A6490E1D79AF2100ACDF85 /* TrailLocator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A6493A1D79AF2100ACDF85 /* Build configuration list for PBXNativeTarget "TrailLocator" */;
+			buildPhases = (
+				0E2161F4DD20EC47FAAB116B /* [CP] Check Pods Manifest.lock */,
+				D2A6490B1D79AF2100ACDF85 /* Sources */,
+				D2A6490C1D79AF2100ACDF85 /* Frameworks */,
+				D2A6490D1D79AF2100ACDF85 /* Resources */,
+				6299B5531D2B6389770CE39D /* [CP] Embed Pods Frameworks */,
+				2378A9ABD2849F616D769502 /* [CP] Copy Pods Resources */,
+				1E6212BA46627DED74B82187 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrailLocator;
+			productName = TrailLocator;
+			productReference = D2A6490F1D79AF2100ACDF85 /* TrailLocator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2A649251D79AF2100ACDF85 /* TrailLocatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A6493D1D79AF2100ACDF85 /* Build configuration list for PBXNativeTarget "TrailLocatorTests" */;
+			buildPhases = (
+				8F4CDD742D2882D9F894E60B /* [CP] Check Pods Manifest.lock */,
+				D2A649221D79AF2100ACDF85 /* Sources */,
+				D2A649231D79AF2100ACDF85 /* Frameworks */,
+				D2A649241D79AF2100ACDF85 /* Resources */,
+				1F75FBF35C64465C1786C939 /* [CP] Embed Pods Frameworks */,
+				A45AE3DECF25C6165F0C0DFF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2A649281D79AF2100ACDF85 /* PBXTargetDependency */,
+			);
+			name = TrailLocatorTests;
+			productName = TrailLocatorTests;
+			productReference = D2A649261D79AF2100ACDF85 /* TrailLocatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2A649301D79AF2100ACDF85 /* TrailLocatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A649401D79AF2100ACDF85 /* Build configuration list for PBXNativeTarget "TrailLocatorUITests" */;
+			buildPhases = (
+				BA65594F95548A1A04C9C4C3 /* [CP] Check Pods Manifest.lock */,
+				D2A6492D1D79AF2100ACDF85 /* Sources */,
+				D2A6492E1D79AF2100ACDF85 /* Frameworks */,
+				D2A6492F1D79AF2100ACDF85 /* Resources */,
+				8E6B2514855204398B12E885 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2A649331D79AF2100ACDF85 /* PBXTargetDependency */,
+			);
+			name = TrailLocatorUITests;
+			productName = TrailLocatorUITests;
+			productReference = D2A649311D79AF2100ACDF85 /* TrailLocatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2A649071D79AF2100ACDF85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Jon Thornburg";
+				TargetAttributes = {
+					D2A6490E1D79AF2100ACDF85 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3PMK8LZPU8;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					D2A649251D79AF2100ACDF85 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = D2A6490E1D79AF2100ACDF85;
+					};
+					D2A649301D79AF2100ACDF85 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = D2A6490E1D79AF2100ACDF85;
+					};
+				};
+			};
+			buildConfigurationList = D2A6490A1D79AF2100ACDF85 /* Build configuration list for PBXProject "TrailLocator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2A649061D79AF2100ACDF85;
+			productRefGroup = D2A649101D79AF2100ACDF85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2A6490E1D79AF2100ACDF85 /* TrailLocator */,
+				D2A649251D79AF2100ACDF85 /* TrailLocatorTests */,
+				D2A649301D79AF2100ACDF85 /* TrailLocatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2A6490D1D79AF2100ACDF85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29891BB1DCB8CF200DE718F /* Cocogoose Letterpress.ttf in Resources */,
+				D2A649791D79B4E800ACDF85 /* SettingsCell.xib in Resources */,
+				D2A6497E1D79BA0200ACDF85 /* GoogleService-Info.plist in Resources */,
+				D2A649201D79AF2100ACDF85 /* LaunchScreen.storyboard in Resources */,
+				D2A6491D1D79AF2100ACDF85 /* Assets.xcassets in Resources */,
+				D2A649751D79B4D500ACDF85 /* CustomCell.xib in Resources */,
+				D2A649181D79AF2100ACDF85 /* Main.storyboard in Resources */,
+				D2A649771D79B4DD00ACDF85 /* DetailCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A649241D79AF2100ACDF85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6492F1D79AF2100ACDF85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E2161F4DD20EC47FAAB116B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1E6212BA46627DED74B82187 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F75FBF35C64465C1786C939 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocatorTests/Pods-TrailLocatorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2378A9ABD2849F616D769502 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6299B5531D2B6389770CE39D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E6B2514855204398B12E885 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocatorUITests/Pods-TrailLocatorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F4CDD742D2882D9F894E60B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A45AE3DECF25C6165F0C0DFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocatorTests/Pods-TrailLocatorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA65594F95548A1A04C9C4C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2A6490B1D79AF2100ACDF85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A6494B1D79B20F00ACDF85 /* String + extensions.swift in Sources */,
+				D2A6496E1D79B42100ACDF85 /* CustomCell.swift in Sources */,
+				D2A649641D79B38C00ACDF85 /* TableViewController.swift in Sources */,
+				D2A6496A1D79B3C100ACDF85 /* WebViewController.swift in Sources */,
+				D25FAC131DB43374001860A0 /* MakeTrailArray.swift in Sources */,
+				D2A6491B1D79AF2100ACDF85 /* TrailLocator.xcdatamodeld in Sources */,
+				D2A649681D79B3B500ACDF85 /* SettingsViewController.swift in Sources */,
+				D2A649701D79B42F00ACDF85 /* DetailCell.swift in Sources */,
+				D2A6495C1D79B2FC00ACDF85 /* TrailDict.swift in Sources */,
+				D2A649531D79B22B00ACDF85 /* UIColor + Extensions.swift in Sources */,
+				D2C71C261D8DCAC40093BA81 /* FirebaseAuth.swift in Sources */,
+				D27E6F301D87575C00F5B48C /* Stack.swift in Sources */,
+				D2A649721D79B43E00ACDF85 /* SettingsCell.swift in Sources */,
+				D25FAC111DB42EF0001860A0 /* Parser.swift in Sources */,
+				D2A649451D79B1ED00ACDF85 /* Reachable.swift in Sources */,
+				D27E6F341D87593E00F5B48C /* Person.swift in Sources */,
+				D2CAC3F01D7EFB920017E909 /* RegisterViewController.swift in Sources */,
+				D2A649661D79B39C00ACDF85 /* DetailTableView.swift in Sources */,
+				D2A649511D79B22400ACDF85 /* MapTrail.swift in Sources */,
+				D27E6F371D8759D200F5B48C /* SaveAndFetch.swift in Sources */,
+				D2A6494F1D79B21B00ACDF85 /* PropertySorter.swift in Sources */,
+				D2A649131D79AF2100ACDF85 /* AppDelegate.swift in Sources */,
+				D25FAC0F1DB42AD9001860A0 /* APIService.swift in Sources */,
+				D2A6494D1D79B21500ACDF85 /* UIImageView+Extensions.swift in Sources */,
+				D2A6497C1D79B8A800ACDF85 /* FirebaseGet.swift in Sources */,
+				D2A6496C1D79B3F400ACDF85 /* ConfigureCell.swift in Sources */,
+				D2A649491D79B20000ACDF85 /* JsonDigger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A649221D79AF2100ACDF85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A6492B1D79AF2100ACDF85 /* TrailLocatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6492D1D79AF2100ACDF85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A649361D79AF2100ACDF85 /* TrailLocatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2A649281D79AF2100ACDF85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2A6490E1D79AF2100ACDF85 /* TrailLocator */;
+			targetProxy = D2A649271D79AF2100ACDF85 /* PBXContainerItemProxy */;
+		};
+		D2A649331D79AF2100ACDF85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2A6490E1D79AF2100ACDF85 /* TrailLocator */;
+			targetProxy = D2A649321D79AF2100ACDF85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2A649161D79AF2100ACDF85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2A649171D79AF2100ACDF85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2A6491E1D79AF2100ACDF85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2A6491F1D79AF2100ACDF85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2A649381D79AF2100ACDF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2A649391D79AF2100ACDF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2A6493B1D79AF2100ACDF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 544287908AC92CB6D7C97BCA /* Pods-TrailLocator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TrailLocator/TrailLocator.entitlements;
+				DEVELOPMENT_TEAM = 3PMK8LZPU8;
+				INFOPLIST_FILE = TrailLocator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jon-thornburg.TrailLocator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D2A6493C1D79AF2100ACDF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4D502DB872268A11EC606D8 /* Pods-TrailLocator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TrailLocator/TrailLocator.entitlements;
+				DEVELOPMENT_TEAM = 3PMK8LZPU8;
+				INFOPLIST_FILE = TrailLocator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jon-thornburg.TrailLocator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D2A6493E1D79AF2100ACDF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D851B7DAF14DBA3F363247 /* Pods-TrailLocatorTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrailLocatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clickHereLabs.TrailLocatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrailLocator.app/TrailLocator";
+			};
+			name = Debug;
+		};
+		D2A6493F1D79AF2100ACDF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A992FD3BCF76DF69D136FB1 /* Pods-TrailLocatorTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrailLocatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clickHereLabs.TrailLocatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrailLocator.app/TrailLocator";
+			};
+			name = Release;
+		};
+		D2A649411D79AF2100ACDF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 562D166BE1DE3A8499CD9491 /* Pods-TrailLocatorUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = TrailLocatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clickHereLabs.TrailLocatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TrailLocator;
+			};
+			name = Debug;
+		};
+		D2A649421D79AF2100ACDF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0428524D68697C6B1068AF13 /* Pods-TrailLocatorUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = TrailLocatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clickHereLabs.TrailLocatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TrailLocator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2A6490A1D79AF2100ACDF85 /* Build configuration list for PBXProject "TrailLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A649381D79AF2100ACDF85 /* Debug */,
+				D2A649391D79AF2100ACDF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A6493A1D79AF2100ACDF85 /* Build configuration list for PBXNativeTarget "TrailLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A6493B1D79AF2100ACDF85 /* Debug */,
+				D2A6493C1D79AF2100ACDF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A6493D1D79AF2100ACDF85 /* Build configuration list for PBXNativeTarget "TrailLocatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A6493E1D79AF2100ACDF85 /* Debug */,
+				D2A6493F1D79AF2100ACDF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A649401D79AF2100ACDF85 /* Build configuration list for PBXNativeTarget "TrailLocatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A649411D79AF2100ACDF85 /* Debug */,
+				D2A649421D79AF2100ACDF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2A649191D79AF2100ACDF85 /* TrailLocator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2A6491A1D79AF2100ACDF85 /* TrailLocator.xcdatamodel */,
+			);
+			currentVersion = D2A6491A1D79AF2100ACDF85 /* TrailLocator.xcdatamodel */;
+			path = TrailLocator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D2A649071D79AF2100ACDF85 /* Project object */;
+}
