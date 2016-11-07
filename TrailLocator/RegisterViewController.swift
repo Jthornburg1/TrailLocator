@@ -47,12 +47,12 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     @IBAction func submitClicked(_ sender: AnyObject) {
         
-        guard let email = emailText.text, let password = passwordText.text, let username = usernameText.text else {
-            
-            showFieldsEmptyAlert()
-            
-            return
-        }
+//        guard let email = emailText.text, let password = passwordText.text, let username = usernameText.text else {
+//            
+//            showFieldsEmptyAlert()
+//            
+//            return
+//        }
     }
     @IBAction func segmentValueChanged(_ sender: AnyObject) {
         if segmentedControl.selectedSegmentIndex == 0 {

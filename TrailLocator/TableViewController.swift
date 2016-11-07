@@ -92,8 +92,10 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as? DetailTableView
-        vc?.trail = items[itemsIndex!]
+        if segue.identifier == "showDetail" {
+            let vc = segue.destination as? DetailTableView
+            vc?.trail = items[itemsIndex!]
+        }
     }
     
     @IBAction func addTrailClicked(_ sender: AnyObject) {
@@ -102,6 +104,10 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         } else {
             showLoginAlert()
         }
+    }
+    
+    @IBAction func settingsClicked(_ sender: Any) {
+        performSegue(withIdentifier: "settingsSegue", sender: self)
     }
     
     func showLoginAlert() {

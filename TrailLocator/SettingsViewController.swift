@@ -11,23 +11,27 @@ import UIKit
 class SettingsViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var toolbar: UIToolbar!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var backButton: UIButton!
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let bundle = Bundle(identifier: "clickHereLabs.TrailLocator")
+        
+        titleLabel.textColor = UIColor.tryBlue()
+        let bundle = Bundle(identifier: "com..FindMyTrail")
         let cellNib = UINib(nibName: "SettingsCell", bundle: bundle!)
         tableView.register(cellNib, forCellReuseIdentifier: "SettingsCell")
         tableView.rowHeight = 37
         tableView.isScrollEnabled = false
-        toolbar.backgroundColor = UIColor.newGrey()
-        view.backgroundColor = UIColor.newTan()
-        toolbar.tintColor = UIColor.diffGreen()
+        
+        
+        tableView.separatorColor = UIColor.clear
+        self.view.backgroundColor = UIColor.myOrange()
     }
     
-    @IBAction func backTapped(_ sender: AnyObject) {
+    @IBAction func backTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     

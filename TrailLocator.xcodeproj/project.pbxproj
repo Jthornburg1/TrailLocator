@@ -390,7 +390,7 @@
 				TargetAttributes = {
 					D2A6490E1D79AF2100ACDF85 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 3PMK8LZPU8;
+						DevelopmentTeam = 5XL94NV2G5;
 						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -782,10 +782,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TrailLocator/TrailLocator.entitlements;
-				DEVELOPMENT_TEAM = 3PMK8LZPU8;
+				DEVELOPMENT_TEAM = 5XL94NV2G5;
 				INFOPLIST_FILE = TrailLocator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jon-thornburg.TrailLocator";
+				PRODUCT_BUNDLE_IDENTIFIER = com..FindMyTrail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -797,10 +797,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TrailLocator/TrailLocator.entitlements;
-				DEVELOPMENT_TEAM = 3PMK8LZPU8;
+				DEVELOPMENT_TEAM = 5XL94NV2G5;
 				INFOPLIST_FILE = TrailLocator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jon-thornburg.TrailLocator";
+				PRODUCT_BUNDLE_IDENTIFIER = com..FindMyTrail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

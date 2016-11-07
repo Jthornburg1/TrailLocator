@@ -13,7 +13,7 @@ extension String {
     
     func trunc(_ length: Int, trailing: String = "...") -> String {
         if self.characters.count > length {
-            return self.substring(to: self.characters.index(self.startIndex, offsetBy: length)) + (trailing ?? "")
+            return self.substring(to: self.characters.index(self.startIndex, offsetBy: length)) + (trailing )
         } else {
             return self
         }

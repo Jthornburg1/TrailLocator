@@ -95,7 +95,7 @@ struct SprayFirebase: AddTrails {
         ref.child("cities").observe(FIRDataEventType.value, with: { (snapShot) in
             if let dct = snapShot.value as? [String : AnyObject] {
                 dict = dct
-                for (id, value) in dict {
+                for (id, _) in dict {
                     print(id)
                     
                 }
