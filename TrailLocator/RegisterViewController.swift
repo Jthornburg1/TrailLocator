@@ -11,7 +11,7 @@ import UIKit
 import FBSDKLoginKit
 import Firebase
 
-class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate {
+class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var userTextHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var usernameSeparator: UIView!
@@ -28,6 +28,11 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailText.delegate = self
+        passwordText.delegate = self
+        usernameText.delegate = self
+        
         topBar.barTintColor = UIColor.tryBlue()
         topBar.tintColor = UIColor.white
         segmentedControl.selectedSegmentIndex = 0
@@ -44,15 +49,17 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     @IBAction func uploadPhotoClicked(_ sender: AnyObject) {
+        
     }
     @IBAction func submitClicked(_ sender: AnyObject) {
         
-//        guard let email = emailText.text, let password = passwordText.text, let username = usernameText.text else {
-//            
-//            showFieldsEmptyAlert()
-//            
-//            return
-//        }
+        if emailText.text == "" || usernameText.text == "" || passwordText.text == "" {
+            showFieldsEmptyAlert()
+        } else {
+            FIRAuth.auth()?.createUser(withEmail: emailText.text!, password: passwordText.text!, completion: { (user, error) in
+                print("We've got us a live 'un: \(self.usernameText.text!)")
+            })
+        }
     }
     @IBAction func segmentValueChanged(_ sender: AnyObject) {
         if segmentedControl.selectedSegmentIndex == 0 {
@@ -94,7 +101,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate {
                 })
 
             } else {
-                print("Fuck you.")
+                
             }
         } else {
             let alert = UIAlertController(title: "Error", message: "Your network connection is bad. Try logging in again when it's better.", preferredStyle: .alert)
@@ -106,5 +113,13 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("loggedout")
+    }
+    
+    // TextField delegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailText.resignFirstResponder()
+        usernameText.resignFirstResponder()
+        passwordText.resignFirstResponder()
+        return true
     }
 }

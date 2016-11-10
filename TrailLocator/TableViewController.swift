@@ -23,8 +23,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addTrailButton.isEnabled = false
-        addTrailButton.tintColor = UIColor.clear
+        
         tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
