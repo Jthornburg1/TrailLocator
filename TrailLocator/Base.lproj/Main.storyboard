@@ -221,12 +221,18 @@
                                             <action selector="dismissTapped:" destination="Ek4-KG-3PV" id="zYc-0V-8JR"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="faN-eI-ir5"/>
+                                    <barButtonItem title="Logout" id="aWJ-go-UV4">
+                                        <connections>
+                                            <action selector="logoutTapped:" destination="Ek4-KG-3PV" id="li1-3d-X7E"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50F-dB-X5G">
                                 <rect key="frame" x="16" y="258" width="343" height="152"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8U-Gi-UJe">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8U-Gi-UJe">
                                         <rect key="frame" x="20" y="0.0" width="323" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="z3K-AE-tvD"/>
@@ -241,7 +247,7 @@
                                             <constraint firstAttribute="height" constant="1" id="U40-3a-8X0"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DCZ-Yz-Yw1">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DCZ-Yz-Yw1">
                                         <rect key="frame" x="20" y="51" width="323" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ws4-50-k7J"/>
@@ -256,7 +262,7 @@
                                             <constraint firstAttribute="height" constant="1" id="6Gx-Uq-eof"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lws-90-PA2">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lws-90-PA2">
                                         <rect key="frame" x="20" y="102" width="323" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="jbT-3Z-E79"/>
@@ -286,7 +292,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81p-mb-Z33">
-                                <rect key="frame" x="32" y="486" width="311" height="50"/>
+                                <rect key="frame" x="32" y="435" width="311" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.12847396129999999" blue="0.091321109260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="E48-5S-bXz"/>
@@ -298,21 +304,8 @@
                                     <action selector="submitClicked:" destination="Ek4-KG-3PV" eventType="touchUpInside" id="cH9-wx-2nT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvf-eZ-xew">
-                                <rect key="frame" x="32" y="423" width="311" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.12847396129999999" blue="0.091321109260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="XT9-oy-lzG"/>
-                                </constraints>
-                                <state key="normal" title="Upload a photo">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="uploadPhotoClicked:" destination="Ek4-KG-3PV" eventType="touchUpInside" id="Kjx-Jd-Ta9"/>
-                                </connections>
-                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MjP-dz-3KY">
-                                <rect key="frame" x="28" y="554" width="319" height="29"/>
+                                <rect key="frame" x="28" y="503" width="319" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="09Z-wE-7gJ"/>
                                 </constraints>
@@ -367,19 +360,16 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TSt-k8-mcZ" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="92" id="0nO-XG-rfQ"/>
+                            <constraint firstItem="81p-mb-Z33" firstAttribute="top" secondItem="Lws-90-PA2" secondAttribute="bottom" constant="25" id="2dV-kr-XCV"/>
                             <constraint firstItem="MjP-dz-3KY" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="A9I-eO-JwF"/>
-                            <constraint firstItem="yvf-eZ-xew" firstAttribute="top" secondItem="Lws-90-PA2" secondAttribute="bottom" constant="13" id="AE7-3q-os2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yvf-eZ-xew" secondAttribute="trailing" constant="16" id="AWT-Wj-hfn"/>
                             <constraint firstItem="MjP-dz-3KY" firstAttribute="top" secondItem="81p-mb-Z33" secondAttribute="bottom" constant="18" id="BGW-KC-dLL"/>
                             <constraint firstItem="giI-I4-cNA" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="CMs-fr-4dH"/>
                             <constraint firstItem="50F-dB-X5G" firstAttribute="centerY" secondItem="M2Z-VQ-Bdr" secondAttribute="centerY" id="GFK-JZ-Xmb"/>
                             <constraint firstItem="MjP-dz-3KY" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="12" id="PRr-fL-axC"/>
                             <constraint firstItem="giI-I4-cNA" firstAttribute="top" secondItem="0KM-t7-qIx" secondAttribute="bottom" constant="13.5" id="QTd-nI-pKL"/>
                             <constraint firstItem="0KM-t7-qIx" firstAttribute="top" secondItem="TSt-k8-mcZ" secondAttribute="bottom" constant="2.5" id="Ux5-iK-Ilo"/>
-                            <constraint firstItem="yvf-eZ-xew" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="16" id="Uy9-oO-vrg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TSt-k8-mcZ" secondAttribute="trailing" constant="93" id="Xth-iv-aeY"/>
                             <constraint firstItem="efe-Bf-sD8" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="19" id="byE-QY-ENt"/>
-                            <constraint firstItem="81p-mb-Z33" firstAttribute="top" secondItem="yvf-eZ-xew" secondAttribute="bottom" constant="13" id="dl3-CW-Y9i"/>
                             <constraint firstAttribute="trailingMargin" secondItem="81p-mb-Z33" secondAttribute="trailing" constant="16" id="dvX-5u-3B7"/>
                             <constraint firstItem="0KM-t7-qIx" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="evR-gv-t5M"/>
                             <constraint firstItem="QGm-lk-5QH" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" id="gYi-5s-WSC"/>
@@ -400,11 +390,13 @@
                         <outlet property="emailText" destination="Lws-90-PA2" id="mMN-rg-xXp"/>
                         <outlet property="fbLoginButton" destination="BMR-0R-pWQ" id="Bdf-eu-XeF"/>
                         <outlet property="loginView" destination="0KM-t7-qIx" id="Pbg-vG-fsB"/>
+                        <outlet property="logoutButton" destination="aWJ-go-UV4" id="a0X-5f-to0"/>
+                        <outlet property="orSupplyLabel" destination="giI-I4-cNA" id="fXy-LW-6Ha"/>
                         <outlet property="passwordText" destination="DCZ-Yz-Yw1" id="Ymi-Iy-eSn"/>
                         <outlet property="segmentedControl" destination="MjP-dz-3KY" id="Xjj-Q5-OIF"/>
                         <outlet property="submitButton" destination="81p-mb-Z33" id="EkL-ue-EhP"/>
+                        <outlet property="textFieldContainer" destination="50F-dB-X5G" id="GdM-H7-jQf"/>
                         <outlet property="topBar" destination="QGm-lk-5QH" id="q3A-9k-WzL"/>
-                        <outlet property="uploadPhotoButton" destination="yvf-eZ-xew" id="t8Q-yq-gK3"/>
                         <outlet property="userTextHeightConstraint" destination="z3K-AE-tvD" id="04x-D5-ixv"/>
                         <outlet property="usernameSeparator" destination="ToY-jQ-AaE" id="ZdF-Md-lC8"/>
                         <outlet property="usernameText" destination="L8U-Gi-UJe" id="DsA-ss-hGt"/>

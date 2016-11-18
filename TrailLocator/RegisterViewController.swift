@@ -13,21 +13,33 @@ import Firebase
 
 class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDelegate {
     
+    @IBOutlet weak var logoutButton: UIBarButtonItem!
+    @IBOutlet weak var orSupplyLabel: UILabel!
     @IBOutlet weak var userTextHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var usernameSeparator: UIView!
     @IBOutlet weak var usernameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var emailText: UITextField!
-    @IBOutlet weak var uploadPhotoButton: UIButton!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var fbLoginButton: FBSDKLoginButton!
     @IBOutlet weak var topBar: UIToolbar!
+    @IBOutlet weak var textFieldContainer: UIView!
+    
+    let fireLog = FirebaseAuth()
+    let fireGet = SprayFirebase()
+    let defaults = UserDefaults()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if defaults.bool(forKey: "userLoggedIn") == true {
+            hideAndDisable()
+        } else {
+            showAndEnable()
+        }
         
         emailText.delegate = self
         passwordText.delegate = self
@@ -36,7 +48,6 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
         topBar.barTintColor = UIColor.tryBlue()
         topBar.tintColor = UIColor.white
         segmentedControl.selectedSegmentIndex = 0
-        uploadPhotoButton.layer.cornerRadius = 5
         submitButton.layer.cornerRadius = 5
         
         self.fbLoginButton.readPermissions = ["public_profile", "email", "user_friends"]
@@ -48,9 +59,6 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
         
     }
     
-    @IBAction func uploadPhotoClicked(_ sender: AnyObject) {
-        
-    }
     @IBAction func submitClicked(_ sender: AnyObject) {
         
         if emailText.text == "" || usernameText.text == "" || passwordText.text == "" {
@@ -58,6 +66,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
         } else {
             FIRAuth.auth()?.createUser(withEmail: emailText.text!, password: passwordText.text!, completion: { (user, error) in
                 print("We've got us a live 'un: \(self.usernameText.text!)")
+                self.hideAndDisable()
             })
         }
     }
@@ -67,9 +76,16 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
         } else {
             isLogin()
         }
+        fireGet.addTestNode()
     }
     @IBAction func dismissTapped(_ sender: AnyObject) {
         self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func logoutTapped(_ sender: Any) {
+        fireLog.logoutOfFirebase()
+        defaults.set(false, forKey: "userLoggedIn")
+        fbLoginButton.sendActions(for: .touchUpInside)
+        showAndEnable()
     }
     
     func isLogin() {
@@ -98,6 +114,8 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: token)
                 FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
                     print("logged into both")
+                    self.defaults.set(true, forKey: "userLoggedIn")
+                    self.hideAndDisable()
                 })
 
             } else {
@@ -112,7 +130,9 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-        
+        fireLog.logoutOfFirebase()
+        defaults.set(false, forKey: "userLoggedIn")
+        showAndEnable()
         print("loggedout")
     }
     
@@ -122,5 +142,31 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
         usernameText.resignFirstResponder()
         passwordText.resignFirstResponder()
         return true
+    }
+    
+    func hideAndDisable() {
+        usernameText.isUserInteractionEnabled = false
+        passwordText.isUserInteractionEnabled = false
+        emailText.isUserInteractionEnabled = false
+        textFieldContainer.isHidden = true
+        orSupplyLabel.isHidden = true
+        submitButton.isHidden = true
+        submitButton.isUserInteractionEnabled = false
+        segmentedControl.isHidden = true
+        segmentedControl.isUserInteractionEnabled = false
+        logoutButton.isEnabled = true
+    }
+    
+    func showAndEnable() {
+        usernameText.isUserInteractionEnabled = true
+        passwordText.isUserInteractionEnabled = true
+        emailText.isUserInteractionEnabled = true
+        textFieldContainer.isHidden = false
+        orSupplyLabel.isHidden = false
+        submitButton.isHidden = false
+        submitButton.isUserInteractionEnabled = true
+        segmentedControl.isHidden = false
+        segmentedControl.isUserInteractionEnabled = true
+        logoutButton.isEnabled = false
     }
 }

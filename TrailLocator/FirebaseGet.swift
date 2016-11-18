@@ -28,6 +28,14 @@ struct SprayFirebase: AddTrails {
     let ref = FIRDatabase.database().reference()
     let digger = JsonDigger()
     
+    func addTestNode() {
+        let pathString = "Jon/wants/to/see/if/he/can/post/while/logged/out"
+        let dict = ["Maybe" : false]
+
+        let update = [pathString : dict]
+        ref.updateChildValues(update)
+    }
+    
     func addNewArray(_ city: String, trailArray: [TrailDict]) {
         //Create an enormous nested dictionary
         
