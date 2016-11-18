@@ -28,7 +28,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //
+        
         emailText.delegate = self
         passwordText.delegate = self
         usernameText.delegate = self

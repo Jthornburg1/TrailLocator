@@ -144,7 +144,8 @@ class DetailTableView: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "webSegue" {
-            let vc = segue.destination as! WebViewController
+            let nav = segue.destination as! UINavigationController
+            let vc = nav.topViewController as! WebViewController
             vc.str = self.webUrl!
         }
     }

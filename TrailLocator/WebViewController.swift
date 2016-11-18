@@ -11,21 +11,24 @@ import UIKit
 
 class WebViewController: UIViewController {
     
-    @IBOutlet var toolbar: UIView!
     var str: String?
     
-    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadWebPage()
+        title = "TRAIL LOCATOR"
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.tryBlue(), NSFontAttributeName: UIFont(name: "COCOGOOSELETTERPRESS", size: 20)!]
     }
-    @IBAction func downTapped(_ sender: AnyObject) {
-        dismiss(animated: true, completion: nil)
-    }
+    
     
     func loadWebPage() {
         let url = URL(string: str!)
         let request = URLRequest(url: url!)
         webView.loadRequest(request)
+    }
+    @IBAction func dismissTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 }
