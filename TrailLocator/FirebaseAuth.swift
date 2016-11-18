@@ -27,4 +27,12 @@ struct FirebaseAuth {
             }
         })
     }
+    
+    func logoutOfFirebase() {
+        do {
+            try FIRAuth.auth()!.signOut()
+        } catch {
+            print("error: FIRAuthErrorCodeKeychainError")
+        }
+    }
 }

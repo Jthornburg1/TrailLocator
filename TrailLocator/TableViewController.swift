@@ -15,6 +15,9 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var addTrailButton: UIBarButtonItem!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var toolBar: UIToolbar!
+    
+    
     var items = [TrailDict]()
     var itemsIndex: Int?
     let fbGetter = SprayFirebase()
@@ -34,6 +37,8 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         textField.backgroundColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 0.6)
         title = "TRAIL LOCATOR"
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.tryBlue(), NSFontAttributeName: UIFont(name: "COCOGOOSELETTERPRESS", size: 20)!]
+        navigationController?.hidesBarsOnSwipe = true
+        navigationController?.toolbar.barTintColor = UIColor.myOrange()
     }
     
     // Textfield delegate methods

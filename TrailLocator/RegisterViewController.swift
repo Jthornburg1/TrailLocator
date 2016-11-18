@@ -112,6 +112,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        
         print("loggedout")
     }
     
