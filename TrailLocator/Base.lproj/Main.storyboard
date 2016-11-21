@@ -169,7 +169,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j12-XS-WmP">
-                                <rect key="frame" x="141" y="20" width="93" height="28"/>
+                                <rect key="frame" x="141.5" y="20" width="93" height="28"/>
                                 <fontDescription key="fontDescription" name="COCOGOOSELETTERPRESS" family="COCOGOOSE LETTERPRESS" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -214,7 +214,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGm-lk-5QH">
-                                <rect key="frame" x="-4" y="20" width="383" height="64"/>
+                                <rect key="frame" x="-4" y="20" width="383" height="67"/>
                                 <items>
                                     <barButtonItem image="down" id="ZAT-ob-Edu">
                                         <connections>
@@ -229,6 +229,12 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youn's is logged in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIM-0X-BL3">
+                                <rect key="frame" x="42" y="265" width="291" height="24.5"/>
+                                <fontDescription key="fontDescription" name="COCOGOOSELETTERPRESS" family="COCOGOOSE LETTERPRESS" pointSize="17"/>
+                                <color key="textColor" red="0.1984402948" green="0.19191655390000001" blue="0.78116987179999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50F-dB-X5G">
                                 <rect key="frame" x="16" y="258" width="343" height="152"/>
                                 <subviews>
@@ -271,7 +277,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Lws-90-PA2" firstAttribute="leading" secondItem="50F-dB-X5G" secondAttribute="leading" constant="20" id="1WY-yZ-qJ3"/>
                                     <constraint firstAttribute="trailing" secondItem="DCZ-Yz-Yw1" secondAttribute="trailing" id="2wF-1s-GaB"/>
@@ -317,12 +323,6 @@
                                     <action selector="segmentValueChanged:" destination="Ek4-KG-3PV" eventType="valueChanged" id="4gI-kn-EXf"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSt-k8-mcZ">
-                                <rect key="frame" x="108" y="93" width="158" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...or supply the following:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giI-I4-cNA">
                                 <rect key="frame" x="92" y="222" width="192" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -348,7 +348,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efe-Bf-sD8">
-                                <rect key="frame" x="117" y="39" width="142" height="26"/>
+                                <rect key="frame" x="117" y="39" width="142" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="142" id="pV4-cn-H46"/>
                                 </constraints>
@@ -359,16 +359,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TSt-k8-mcZ" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="92" id="0nO-XG-rfQ"/>
                             <constraint firstItem="81p-mb-Z33" firstAttribute="top" secondItem="Lws-90-PA2" secondAttribute="bottom" constant="25" id="2dV-kr-XCV"/>
                             <constraint firstItem="MjP-dz-3KY" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="A9I-eO-JwF"/>
                             <constraint firstItem="MjP-dz-3KY" firstAttribute="top" secondItem="81p-mb-Z33" secondAttribute="bottom" constant="18" id="BGW-KC-dLL"/>
                             <constraint firstItem="giI-I4-cNA" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="CMs-fr-4dH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TIM-0X-BL3" secondAttribute="trailing" constant="26" id="F10-e1-0qi"/>
                             <constraint firstItem="50F-dB-X5G" firstAttribute="centerY" secondItem="M2Z-VQ-Bdr" secondAttribute="centerY" id="GFK-JZ-Xmb"/>
+                            <constraint firstItem="TIM-0X-BL3" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="26" id="Obs-iQ-JAk"/>
                             <constraint firstItem="MjP-dz-3KY" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="12" id="PRr-fL-axC"/>
                             <constraint firstItem="giI-I4-cNA" firstAttribute="top" secondItem="0KM-t7-qIx" secondAttribute="bottom" constant="13.5" id="QTd-nI-pKL"/>
-                            <constraint firstItem="0KM-t7-qIx" firstAttribute="top" secondItem="TSt-k8-mcZ" secondAttribute="bottom" constant="2.5" id="Ux5-iK-Ilo"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TSt-k8-mcZ" secondAttribute="trailing" constant="93" id="Xth-iv-aeY"/>
+                            <constraint firstItem="TIM-0X-BL3" firstAttribute="top" secondItem="giI-I4-cNA" secondAttribute="bottom" constant="22" id="XLW-jo-1pi"/>
                             <constraint firstItem="efe-Bf-sD8" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="19" id="byE-QY-ENt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="81p-mb-Z33" secondAttribute="trailing" constant="16" id="dvX-5u-3B7"/>
                             <constraint firstItem="0KM-t7-qIx" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="evR-gv-t5M"/>
@@ -382,13 +382,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="50F-dB-X5G" secondAttribute="trailing" id="qM3-k8-q1t"/>
                             <constraint firstItem="efe-Bf-sD8" firstAttribute="centerY" secondItem="QGm-lk-5QH" secondAttribute="centerY" id="sX9-X6-9Dc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QGm-lk-5QH" secondAttribute="trailing" constant="-20" id="tZJ-MS-3lh"/>
-                            <constraint firstItem="TSt-k8-mcZ" firstAttribute="top" secondItem="QGm-lk-5QH" secondAttribute="bottom" constant="9" id="uQB-AJ-Ygq"/>
                             <constraint firstItem="50F-dB-X5G" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="zBD-jN-T3a"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="emailText" destination="Lws-90-PA2" id="mMN-rg-xXp"/>
                         <outlet property="fbLoginButton" destination="BMR-0R-pWQ" id="Bdf-eu-XeF"/>
+                        <outlet property="loggedInLabel" destination="TIM-0X-BL3" id="omu-Wo-x34"/>
                         <outlet property="loginView" destination="0KM-t7-qIx" id="Pbg-vG-fsB"/>
                         <outlet property="logoutButton" destination="aWJ-go-UV4" id="a0X-5f-to0"/>
                         <outlet property="orSupplyLabel" destination="giI-I4-cNA" id="fXy-LW-6Ha"/>

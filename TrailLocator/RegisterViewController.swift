@@ -11,8 +11,14 @@ import UIKit
 import FBSDKLoginKit
 import Firebase
 
+enum LoginType: String {
+    case faisbook = "facebook"
+    case email = "email"
+}
+
 class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDelegate {
     
+    @IBOutlet weak var loggedInLabel: UILabel!
     @IBOutlet weak var logoutButton: UIBarButtonItem!
     @IBOutlet weak var orSupplyLabel: UILabel!
     @IBOutlet weak var userTextHeightConstraint: NSLayoutConstraint!
@@ -30,10 +36,15 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
     let fireLog = FirebaseAuth()
     let fireGet = SprayFirebase()
     let defaults = UserDefaults()
+    var loginType: LoginType?
+    var emailAuthentic: Bool?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loggedInLabel.text = "You're logged in."
+        
         
         if defaults.bool(forKey: "userLoggedIn") == true {
             hideAndDisable()
@@ -66,7 +77,34 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
         } else {
             FIRAuth.auth()?.createUser(withEmail: emailText.text!, password: passwordText.text!, completion: { (user, error) in
                 print("We've got us a live 'un: \(self.usernameText.text!)")
-                self.hideAndDisable()
+                user?.sendEmailVerification(completion: { (error) in
+                    if error != nil {
+                        print(error?.localizedDescription ?? "suck it")
+                        let alert = UIAlertController(title: "Error", message: "The email address was invalid", preferredStyle: .alert)
+                        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                        alert.addAction(action)
+                        self.present(alert, animated: true, completion: nil)
+                        self.showAndEnable()
+                    } else {
+                        let alert = UIAlertController(title: "Verify Email", message: "an email was sent to the address provided. Please open it and click the link to verify", preferredStyle: .alert)
+                        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                        alert.addAction(action)
+                        self.present(alert, animated: true, completion: nil)
+                        self.fbLoginButton.isEnabled = false
+                        self.hideAndDisable()
+                        self.emailAuthentic = true
+                    }
+                })
+                //Shows alert but still not returning to unloggedin display state
+                //Very Wonky Fix!!!
+                if self.emailAuthentic != true {
+                    let alert = UIAlertController(title: "Error", message: "The email address was invalid", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                    alert.addAction(action)
+                    self.present(alert, animated: true, completion: nil)
+                    self.showAndEnable()
+                    self.clearTexts()
+                }
             })
         }
     }
@@ -84,7 +122,11 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
     @IBAction func logoutTapped(_ sender: Any) {
         fireLog.logoutOfFirebase()
         defaults.set(false, forKey: "userLoggedIn")
-        fbLoginButton.sendActions(for: .touchUpInside)
+        if loginType == LoginType.faisbook {
+            fbLoginButton.sendActions(for: .touchUpInside)
+        }
+        loginType = nil
+        clearTexts()
         showAndEnable()
     }
     
@@ -115,6 +157,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
                 FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
                     print("logged into both")
                     self.defaults.set(true, forKey: "userLoggedIn")
+                    self.loginType = LoginType.faisbook
                     self.hideAndDisable()
                 })
 
@@ -133,6 +176,8 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
         fireLog.logoutOfFirebase()
         defaults.set(false, forKey: "userLoggedIn")
         showAndEnable()
+        loginType = nil
+        clearTexts()
         print("loggedout")
     }
     
@@ -168,5 +213,12 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
         segmentedControl.isHidden = false
         segmentedControl.isUserInteractionEnabled = true
         logoutButton.isEnabled = false
+        fbLoginButton.isEnabled = true
+    }
+    
+    func clearTexts() {
+        usernameText.text = ""
+        emailText.text = ""
+        passwordText.text = ""
     }
 }
