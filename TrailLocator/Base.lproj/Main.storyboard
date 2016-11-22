@@ -169,7 +169,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j12-XS-WmP">
-                                <rect key="frame" x="141.5" y="20" width="93" height="28"/>
+                                <rect key="frame" x="141" y="20" width="93" height="28"/>
                                 <fontDescription key="fontDescription" name="COCOGOOSELETTERPRESS" family="COCOGOOSE LETTERPRESS" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -214,7 +214,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youn's is logged in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIM-0X-BL3">
-                                <rect key="frame" x="42" y="265" width="291" height="24.5"/>
+                                <rect key="frame" x="42" y="265" width="291" height="25"/>
                                 <fontDescription key="fontDescription" name="COCOGOOSELETTERPRESS" family="COCOGOOSE LETTERPRESS" pointSize="17"/>
                                 <color key="textColor" red="0.1984402948" green="0.19191655390000001" blue="0.78116987179999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -240,6 +240,14 @@
                                 <color key="textColor" red="1" green="0.34561301480000001" blue="0.0045820879240000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkC-XR-VF3" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="33" y="307" width="94" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="ie6-9t-FqO"/>
+                                    <constraint firstAttribute="width" constant="94" id="q61-sQ-oYb"/>
+                                </constraints>
+                                <state key="normal" title="FBButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -248,7 +256,9 @@
                             <constraint firstItem="50F-dB-X5G" firstAttribute="centerY" secondItem="M2Z-VQ-Bdr" secondAttribute="centerY" id="GFK-JZ-Xmb"/>
                             <constraint firstItem="ua4-YJ-wrI" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" id="Kqs-Or-9ln"/>
                             <constraint firstItem="TIM-0X-BL3" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="26" id="Obs-iQ-JAk"/>
+                            <constraint firstItem="dkC-XR-VF3" firstAttribute="top" secondItem="50F-dB-X5G" secondAttribute="bottom" constant="-103" id="V31-4H-9TM"/>
                             <constraint firstItem="ua4-YJ-wrI" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="-20" id="fd1-aT-BAT"/>
+                            <constraint firstItem="50F-dB-X5G" firstAttribute="leading" secondItem="dkC-XR-VF3" secondAttribute="trailing" constant="-111" id="gYc-Nj-KRg"/>
                             <constraint firstItem="TIM-0X-BL3" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="245" id="iN5-vD-BYF"/>
                             <constraint firstAttribute="leadingMargin" secondItem="50F-dB-X5G" secondAttribute="leading" id="iyd-aG-Oud"/>
                             <constraint firstItem="qXO-Jn-35v" firstAttribute="top" secondItem="ua4-YJ-wrI" secondAttribute="bottom" constant="-35" id="mE4-Qc-KkG"/>
@@ -259,6 +269,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fbButton" destination="dkC-XR-VF3" id="w64-kx-qSs"/>
                         <outlet property="loggedInLabel" destination="TIM-0X-BL3" id="omu-Wo-x34"/>
                         <outlet property="textFieldContainer" destination="50F-dB-X5G" id="GdM-H7-jQf"/>
                         <outlet property="toolBar" destination="ua4-YJ-wrI" id="7Ml-QT-pIp"/>

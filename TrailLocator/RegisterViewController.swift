@@ -21,6 +21,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
     @IBOutlet weak var loggedInLabel: UILabel!
     @IBOutlet weak var textFieldContainer: UIView!
     @IBOutlet weak var toolBar: UIToolbar!
+    @IBOutlet weak var fbButton: FBSDKLoginButton!
     
     let fireLog = FirebaseAuth()
     let fireGet = SprayFirebase()
@@ -33,7 +34,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
         super.viewDidLoad()
         
         UIApplication.shared.setStatusBarHidden(true, with: .none)
-        
+        fbButton.delegate = self
         toolBar.barTintColor = UIColor.tryBlue()
         toolBar.tintColor = UIColor.white
         

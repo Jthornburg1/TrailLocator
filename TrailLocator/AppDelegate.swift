@@ -14,7 +14,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
     let defaults = UserDefaults()
@@ -54,6 +54,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     override init() {
         FIRApp.configure()
         FIRDatabase.database().persistenceEnabled = true
+        
+        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
     }
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {

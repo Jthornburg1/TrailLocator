@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CE4296D951F87FC7D015C75 /* Pods_TrailLocatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE009874F9F547D7B40BC9FD /* Pods_TrailLocatorTests.framework */; };
-		964CD6F697088C2AE283B280 /* Pods_TrailLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F130643A37AD0DE63BA9624 /* Pods_TrailLocator.framework */; };
-		B5A7B3D29A4F607BAE764ED8 /* Pods_TrailLocatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A6BA2845529652E660BF5D /* Pods_TrailLocatorUITests.framework */; };
 		D25FAC0F1DB42AD9001860A0 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25FAC0E1DB42AD9001860A0 /* APIService.swift */; };
 		D25FAC111DB42EF0001860A0 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25FAC101DB42EF0001860A0 /* Parser.swift */; };
 		D25FAC131DB43374001860A0 /* MakeTrailArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25FAC121DB43374001860A0 /* MakeTrailArray.swift */; };
@@ -47,6 +44,7 @@
 		D2A6497E1D79BA0200ACDF85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2A6497D1D79BA0200ACDF85 /* GoogleService-Info.plist */; };
 		D2C71C261D8DCAC40093BA81 /* FirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C71C251D8DCAC40093BA81 /* FirebaseAuth.swift */; };
 		D2CAC3F01D7EFB920017E909 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAC3EF1D7EFB920017E909 /* RegisterViewController.swift */; };
+		D9BB5B4616765697322D026D /* Pods_TrailLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A842574EC0783259CC93DEAC /* Pods_TrailLocator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,13 +65,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0428524D68697C6B1068AF13 /* Pods-TrailLocatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocatorUITests/Pods-TrailLocatorUITests.release.xcconfig"; sourceTree = "<group>"; };
-		16D851B7DAF14DBA3F363247 /* Pods-TrailLocatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocatorTests/Pods-TrailLocatorTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1F130643A37AD0DE63BA9624 /* Pods_TrailLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrailLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A992FD3BCF76DF69D136FB1 /* Pods-TrailLocatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocatorTests/Pods-TrailLocatorTests.release.xcconfig"; sourceTree = "<group>"; };
-		544287908AC92CB6D7C97BCA /* Pods-TrailLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator.debug.xcconfig"; sourceTree = "<group>"; };
-		562D166BE1DE3A8499CD9491 /* Pods-TrailLocatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocatorUITests/Pods-TrailLocatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		CE009874F9F547D7B40BC9FD /* Pods_TrailLocatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrailLocatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0035F1510C6568863E2E11A9 /* Pods-TrailLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator.debug.xcconfig"; sourceTree = "<group>"; };
+		55483331993F358EF5F8670F /* Pods-TrailLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocator.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator.release.xcconfig"; sourceTree = "<group>"; };
+		A842574EC0783259CC93DEAC /* Pods_TrailLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrailLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20188BC1DE509C7001CCE05 /* TrailLocator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrailLocator-Bridging-Header.h"; sourceTree = "<group>"; };
 		D25FAC0E1DB42AD9001860A0 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		D25FAC101DB42EF0001860A0 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		D25FAC121DB43374001860A0 /* MakeTrailArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeTrailArray.swift; sourceTree = "<group>"; };
@@ -118,8 +113,6 @@
 		D2A6497D1D79BA0200ACDF85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D2C71C251D8DCAC40093BA81 /* FirebaseAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuth.swift; sourceTree = "<group>"; };
 		D2CAC3EF1D7EFB920017E909 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		D4D502DB872268A11EC606D8 /* Pods-TrailLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocator.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator.release.xcconfig"; sourceTree = "<group>"; };
-		E1A6BA2845529652E660BF5D /* Pods_TrailLocatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrailLocatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964CD6F697088C2AE283B280 /* Pods_TrailLocator.framework in Frameworks */,
+				D9BB5B4616765697322D026D /* Pods_TrailLocator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +128,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE4296D951F87FC7D015C75 /* Pods_TrailLocatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,32 +135,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A7B3D29A4F607BAE764ED8 /* Pods_TrailLocatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		72D093AAFE6B00DB450C833B /* Pods */ = {
+		392BACFD049B1A860E1B37D9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				544287908AC92CB6D7C97BCA /* Pods-TrailLocator.debug.xcconfig */,
-				D4D502DB872268A11EC606D8 /* Pods-TrailLocator.release.xcconfig */,
-				16D851B7DAF14DBA3F363247 /* Pods-TrailLocatorTests.debug.xcconfig */,
-				4A992FD3BCF76DF69D136FB1 /* Pods-TrailLocatorTests.release.xcconfig */,
-				562D166BE1DE3A8499CD9491 /* Pods-TrailLocatorUITests.debug.xcconfig */,
-				0428524D68697C6B1068AF13 /* Pods-TrailLocatorUITests.release.xcconfig */,
+				0035F1510C6568863E2E11A9 /* Pods-TrailLocator.debug.xcconfig */,
+				55483331993F358EF5F8670F /* Pods-TrailLocator.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9FF19F487073D27EAB19EE5D /* Frameworks */ = {
+		76F34D014FDB17262E007803 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1F130643A37AD0DE63BA9624 /* Pods_TrailLocator.framework */,
-				CE009874F9F547D7B40BC9FD /* Pods_TrailLocatorTests.framework */,
-				E1A6BA2845529652E660BF5D /* Pods_TrailLocatorUITests.framework */,
+				A842574EC0783259CC93DEAC /* Pods_TrailLocator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,8 +175,8 @@
 				D2A649291D79AF2100ACDF85 /* TrailLocatorTests */,
 				D2A649341D79AF2100ACDF85 /* TrailLocatorUITests */,
 				D2A649101D79AF2100ACDF85 /* Products */,
-				72D093AAFE6B00DB450C833B /* Pods */,
-				9FF19F487073D27EAB19EE5D /* Frameworks */,
+				392BACFD049B1A860E1B37D9 /* Pods */,
+				76F34D014FDB17262E007803 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,6 +207,7 @@
 				D2A6491E1D79AF2100ACDF85 /* LaunchScreen.storyboard */,
 				D2A6497D1D79BA0200ACDF85 /* GoogleService-Info.plist */,
 				D2A649211D79AF2100ACDF85 /* Info.plist */,
+				D20188BC1DE509C7001CCE05 /* TrailLocator-Bridging-Header.h */,
 			);
 			path = TrailLocator;
 			sourceTree = "<group>";
@@ -326,7 +312,6 @@
 				D2A6490D1D79AF2100ACDF85 /* Resources */,
 				6299B5531D2B6389770CE39D /* [CP] Embed Pods Frameworks */,
 				2378A9ABD2849F616D769502 /* [CP] Copy Pods Resources */,
-				1E6212BA46627DED74B82187 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -391,7 +376,7 @@
 					D2A6490E1D79AF2100ACDF85 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 5XL94NV2G5;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -476,21 +461,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		1E6212BA46627DED74B82187 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1F75FBF35C64465C1786C939 /* [CP] Embed Pods Frameworks */ = {
@@ -778,37 +748,41 @@
 		};
 		D2A6493B1D79AF2100ACDF85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 544287908AC92CB6D7C97BCA /* Pods-TrailLocator.debug.xcconfig */;
+			baseConfigurationReference = 0035F1510C6568863E2E11A9 /* Pods-TrailLocator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TrailLocator/TrailLocator.entitlements;
 				DEVELOPMENT_TEAM = 5XL94NV2G5;
 				INFOPLIST_FILE = TrailLocator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com..FindMyTrail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrailLocator/TrailLocator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		D2A6493C1D79AF2100ACDF85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4D502DB872268A11EC606D8 /* Pods-TrailLocator.release.xcconfig */;
+			baseConfigurationReference = 55483331993F358EF5F8670F /* Pods-TrailLocator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TrailLocator/TrailLocator.entitlements;
 				DEVELOPMENT_TEAM = 5XL94NV2G5;
 				INFOPLIST_FILE = TrailLocator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com..FindMyTrail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrailLocator/TrailLocator-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		D2A6493E1D79AF2100ACDF85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16D851B7DAF14DBA3F363247 /* Pods-TrailLocatorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TrailLocatorTests/Info.plist;
@@ -822,7 +796,6 @@
 		};
 		D2A6493F1D79AF2100ACDF85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A992FD3BCF76DF69D136FB1 /* Pods-TrailLocatorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TrailLocatorTests/Info.plist;
@@ -836,7 +809,6 @@
 		};
 		D2A649411D79AF2100ACDF85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 562D166BE1DE3A8499CD9491 /* Pods-TrailLocatorUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TrailLocatorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -849,7 +821,6 @@
 		};
 		D2A649421D79AF2100ACDF85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0428524D68697C6B1068AF13 /* Pods-TrailLocatorUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TrailLocatorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
