@@ -10,10 +10,13 @@ import Foundation
 import UIKit
 import FBSDKLoginKit
 import Firebase
+import GoogleSignIn
 
 enum LoginType: String {
-    case faisbook = "facebook"
-    case email = "email"
+    case faisbook = "Facebook"
+    case google = "Google"
+    case none = "Not Logged in"
+    case unRegistered = "Not Registered"
 }
 
 class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDelegate {
@@ -22,6 +25,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
     @IBOutlet weak var textFieldContainer: UIView!
     @IBOutlet weak var toolBar: UIToolbar!
     @IBOutlet weak var fbButton: FBSDKLoginButton!
+    @IBOutlet weak var googelSignInButton: GIDSignInButton!
     
     let fireLog = FirebaseAuth()
     let fireGet = SprayFirebase()
@@ -38,19 +42,54 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
         toolBar.barTintColor = UIColor.tryBlue()
         toolBar.tintColor = UIColor.white
         
-        loggedInLabel.text = "You're logged in."
+        setLoginType()
+        buildDisplayString()
         
         
         if defaults.bool(forKey: "userLoggedIn") == true {
             
-        } else {
-            
         }
-        
+    }
+    
+    func buildDisplayString() {
+        if let logtype = loginType {
+            switch logtype {
+            case LoginType.faisbook:
+                loggedInLabel.text = "You're logged in with Facebook."
+                googelSignInButton.isEnabled = false
+            case LoginType.google:
+                loggedInLabel.text = "You're logged in with Google."
+                fbButton.isEnabled = false
+            case LoginType.none:
+                fbButton.isEnabled = true
+                googelSignInButton.isEnabled = true
+                loggedInLabel.text = "You're not logged in."
+            case LoginType.unRegistered:
+                fbButton.isEnabled = true
+                googelSignInButton.isEnabled = true
+                loggedInLabel.text = "You've not registered yet."
+            default:
+                print("default")
+            }
+        } else {
+            loggedInLabel.text = "You've not registered yet."
+        }
+    }
+    
+    func setLoginType() {
+        if defaults.object(forKey: "LoggedInWith") as? String == "Google" {
+            loginType = LoginType.google
+        } else if defaults.object(forKey: "LoggedInWith") as? String == "Facebook" {
+            loginType = LoginType.faisbook
+        } else if defaults.object(forKey: "LoggedInWith") as? String == "None" {
+            loginType = LoginType.none
+        } else if defaults.object(forKey: "LoggedInWith") as? String == nil {
+            loginType = LoginType.unRegistered
+        }
     }
     
     func configureLoginButton(button: FBSDKLoginButton) {
-        
+        button.tintColor = UIColor.white
     }
     
    

@@ -46,6 +46,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 print("== \(names)")
             }
         }
+        
+        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
+
 
         UIApplication.shared.statusBarStyle = .lightContent
         return true
@@ -54,16 +58,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     override init() {
         FIRApp.configure()
         FIRDatabase.database().persistenceEnabled = true
-        
-        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
-        GIDSignIn.sharedInstance().delegate = self
     }
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        return FBSDKApplicationDelegate.sharedInstance().application(application,
-                                                                     open: url,
-                                                                     sourceApplication: sourceApplication,
-                                                                     annotation: annotation)
+        let googleDidHandle = GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication, annotation: annotation)
+        
+        let facebookDidHandle = FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        
+        return googleDidHandle || facebookDidHandle
+    }
+    
+    public func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let err = error {
+            print(err.localizedDescription)
+            return
+        }
+    }
+    
+    public func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        
+        print("User disconnected from app")
     }
     
     func applicationDidBecomeActive(_ application: UIApplication) {

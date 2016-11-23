@@ -98,7 +98,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="1vR-P7-pbV" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rpE-QW-3dk">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rpE-QW-3dk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -113,7 +113,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kkv-Z6-P3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847" y="357"/>
+            <point key="canvasLocation" x="706" y="357"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="EGI-bI-Hvf">
@@ -213,6 +213,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wasatch" translatesAutoresizingMaskIntoConstraints="NO" id="fiE-KQ-InX">
+                                <rect key="frame" x="-4" y="64" width="383" height="603"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youn's is logged in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIM-0X-BL3">
                                 <rect key="frame" x="42" y="265" width="291" height="25"/>
                                 <fontDescription key="fontDescription" name="COCOGOOSELETTERPRESS" family="COCOGOOSE LETTERPRESS" pointSize="17"/>
@@ -220,18 +223,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50F-dB-X5G">
-                                <rect key="frame" x="16" y="258" width="343" height="152"/>
+                                <rect key="frame" x="16" y="298" width="343" height="63"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="cLS-3a-bH6"/>
+                                    <constraint firstAttribute="height" constant="63" id="cLS-3a-bH6"/>
                                 </constraints>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ua4-YJ-wrI">
                                 <rect key="frame" x="-4" y="20" width="383" height="44"/>
                                 <items>
-                                    <barButtonItem title="Done" id="7Nd-Sc-jEM"/>
+                                    <barButtonItem title="Done" id="7Nd-Sc-jEM">
+                                        <connections>
+                                            <action selector="dismissTapped:" destination="Ek4-KG-3PV" id="fLb-Vy-pmG"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="soh-in-D57"/>
-                                    <barButtonItem title="Logout" id="roR-Ly-G0B"/>
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="REGISTER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXO-Jn-35v">
@@ -241,10 +247,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkC-XR-VF3" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="33" y="307" width="94" height="54"/>
+                                <rect key="frame" x="28" y="307" width="115" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="ie6-9t-FqO"/>
-                                    <constraint firstAttribute="width" constant="94" id="q61-sQ-oYb"/>
+                                    <constraint firstAttribute="height" constant="40" id="ie6-9t-FqO"/>
+                                    <constraint firstAttribute="width" constant="115" id="q61-sQ-oYb"/>
                                 </constraints>
                                 <state key="normal" title="FBButton"/>
                             </button>
@@ -253,18 +259,22 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ua4-YJ-wrI" secondAttribute="trailing" constant="-20" id="7xO-hl-iri"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TIM-0X-BL3" secondAttribute="trailing" constant="26" id="F10-e1-0qi"/>
-                            <constraint firstItem="50F-dB-X5G" firstAttribute="centerY" secondItem="M2Z-VQ-Bdr" secondAttribute="centerY" id="GFK-JZ-Xmb"/>
+                            <constraint firstItem="50F-dB-X5G" firstAttribute="centerY" secondItem="M2Z-VQ-Bdr" secondAttribute="centerY" constant="-3.5" id="GFK-JZ-Xmb"/>
+                            <constraint firstItem="fiE-KQ-InX" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="-20" id="JIk-2Y-2va"/>
                             <constraint firstItem="ua4-YJ-wrI" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" id="Kqs-Or-9ln"/>
                             <constraint firstItem="TIM-0X-BL3" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="26" id="Obs-iQ-JAk"/>
-                            <constraint firstItem="dkC-XR-VF3" firstAttribute="top" secondItem="50F-dB-X5G" secondAttribute="bottom" constant="-103" id="V31-4H-9TM"/>
+                            <constraint firstItem="dkC-XR-VF3" firstAttribute="top" secondItem="50F-dB-X5G" secondAttribute="bottom" constant="-54" id="V31-4H-9TM"/>
                             <constraint firstItem="ua4-YJ-wrI" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="-20" id="fd1-aT-BAT"/>
-                            <constraint firstItem="50F-dB-X5G" firstAttribute="leading" secondItem="dkC-XR-VF3" secondAttribute="trailing" constant="-111" id="gYc-Nj-KRg"/>
+                            <constraint firstItem="50F-dB-X5G" firstAttribute="leading" secondItem="dkC-XR-VF3" secondAttribute="trailing" constant="-127" id="gYc-Nj-KRg"/>
                             <constraint firstItem="TIM-0X-BL3" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="245" id="iN5-vD-BYF"/>
+                            <constraint firstItem="fiE-KQ-InX" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="44" id="iWq-Zq-PC3"/>
                             <constraint firstAttribute="leadingMargin" secondItem="50F-dB-X5G" secondAttribute="leading" id="iyd-aG-Oud"/>
                             <constraint firstItem="qXO-Jn-35v" firstAttribute="top" secondItem="ua4-YJ-wrI" secondAttribute="bottom" constant="-35" id="mE4-Qc-KkG"/>
+                            <constraint firstItem="96u-T1-OH7" firstAttribute="top" secondItem="fiE-KQ-InX" secondAttribute="bottom" id="n5g-fg-J2H"/>
                             <constraint firstAttribute="trailingMargin" secondItem="50F-dB-X5G" secondAttribute="trailing" id="qM3-k8-q1t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fiE-KQ-InX" secondAttribute="trailing" constant="-20" id="r3J-Gx-NRq"/>
                             <constraint firstItem="qXO-Jn-35v" firstAttribute="centerX" secondItem="ua4-YJ-wrI" secondAttribute="centerX" id="tQn-sp-xbf"/>
-                            <constraint firstItem="50F-dB-X5G" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="238" id="tfr-vW-aDc"/>
+                            <constraint firstItem="50F-dB-X5G" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="278" id="tfr-vW-aDc"/>
                             <constraint firstItem="50F-dB-X5G" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="zBD-jN-T3a"/>
                         </constraints>
                     </view>
@@ -350,7 +360,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jkq-km-cDf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Dve-ZZ-8ME">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dve-ZZ-8ME">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -366,6 +376,7 @@
     </scenes>
     <resources>
         <image name="Mountain" width="2448" height="3264"/>
+        <image name="Wasatch" width="2448" height="3264"/>
         <image name="cassette" width="249" height="203"/>
         <image name="compass" width="25" height="25"/>
         <image name="down" width="25" height="25"/>

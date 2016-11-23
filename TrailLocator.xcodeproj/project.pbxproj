@@ -42,6 +42,7 @@
 		D2A649791D79B4E800ACDF85 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A649781D79B4E800ACDF85 /* SettingsCell.xib */; };
 		D2A6497C1D79B8A800ACDF85 /* FirebaseGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6497B1D79B8A800ACDF85 /* FirebaseGet.swift */; };
 		D2A6497E1D79BA0200ACDF85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2A6497D1D79BA0200ACDF85 /* GoogleService-Info.plist */; };
+		D2AC10DC1DE5F3F800CFC8BF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC10DB1DE5F3F800CFC8BF /* Constants.swift */; };
 		D2C71C261D8DCAC40093BA81 /* FirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C71C251D8DCAC40093BA81 /* FirebaseAuth.swift */; };
 		D2CAC3F01D7EFB920017E909 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAC3EF1D7EFB920017E909 /* RegisterViewController.swift */; };
 		D9BB5B4616765697322D026D /* Pods_TrailLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A842574EC0783259CC93DEAC /* Pods_TrailLocator.framework */; };
@@ -111,6 +112,7 @@
 		D2A649781D79B4E800ACDF85 /* SettingsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
 		D2A6497B1D79B8A800ACDF85 /* FirebaseGet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseGet.swift; sourceTree = "<group>"; };
 		D2A6497D1D79BA0200ACDF85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2AC10DB1DE5F3F800CFC8BF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D2C71C251D8DCAC40093BA81 /* FirebaseAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuth.swift; sourceTree = "<group>"; };
 		D2CAC3EF1D7EFB920017E909 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,6 +242,7 @@
 				D2A6494C1D79B21500ACDF85 /* UIImageView+Extensions.swift */,
 				D2A6494E1D79B21B00ACDF85 /* PropertySorter.swift */,
 				D2A649501D79B22400ACDF85 /* MapTrail.swift */,
+				D2AC10DB1DE5F3F800CFC8BF /* Constants.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 				D2A6495C1D79B2FC00ACDF85 /* TrailDict.swift in Sources */,
 				D2A649531D79B22B00ACDF85 /* UIColor + Extensions.swift in Sources */,
 				D2C71C261D8DCAC40093BA81 /* FirebaseAuth.swift in Sources */,
+				D2AC10DC1DE5F3F800CFC8BF /* Constants.swift in Sources */,
 				D27E6F301D87575C00F5B48C /* Stack.swift in Sources */,
 				D2A649721D79B43E00ACDF85 /* SettingsCell.swift in Sources */,
 				D25FAC111DB42EF0001860A0 /* Parser.swift in Sources */,
