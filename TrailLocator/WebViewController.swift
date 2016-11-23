@@ -22,6 +22,9 @@ class WebViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.tryBlue(), NSFontAttributeName: UIFont(name: "COCOGOOSELETTERPRESS", size: 20)!]
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.setStatusBarHidden(false, with: .none)
+    }
     
     func loadWebPage() {
         let url = URL(string: str!)

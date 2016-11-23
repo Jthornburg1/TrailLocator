@@ -36,6 +36,10 @@ class DetailTableView: UITableViewController {
         self.tableView.layoutIfNeeded()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.setStatusBarHidden(false, with: .none)
+    }
+    
     @IBAction func mapButtonTapped(_ sender: AnyObject) {
         if defaults.bool(forKey: "MapsChosen") == false {
             self.showAlert()

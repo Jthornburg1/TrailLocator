@@ -19,13 +19,14 @@ enum LoginType: String {
     case unRegistered = "Not Registered"
 }
 
-class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDelegate {
+class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate, GIDSignInDelegate {
     
     @IBOutlet weak var loggedInLabel: UILabel!
     @IBOutlet weak var textFieldContainer: UIView!
     @IBOutlet weak var toolBar: UIToolbar!
     @IBOutlet weak var fbButton: FBSDKLoginButton!
     @IBOutlet weak var googelSignInButton: GIDSignInButton!
+    @IBOutlet weak var googleSignOutBtn: UIButton!
     
     let fireLog = FirebaseAuth()
     let fireGet = SprayFirebase()
@@ -45,10 +46,18 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
         setLoginType()
         buildDisplayString()
         
-        
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().uiDelegate = self
+        //GIDSignIn.sharedInstance().disconnect()
         if defaults.bool(forKey: "userLoggedIn") == true {
             
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        setLoginType()
+        buildDisplayString()
     }
     
     func buildDisplayString() {
@@ -57,16 +66,21 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
             case LoginType.faisbook:
                 loggedInLabel.text = "You're logged in with Facebook."
                 googelSignInButton.isEnabled = false
+                googleSignOutBtn.isHidden = true
             case LoginType.google:
                 loggedInLabel.text = "You're logged in with Google."
                 fbButton.isEnabled = false
+                googleSignOutBtn.isHidden = false
+                googelSignInButton.isEnabled = false
             case LoginType.none:
                 fbButton.isEnabled = true
                 googelSignInButton.isEnabled = true
+                googleSignOutBtn.isHidden = true
                 loggedInLabel.text = "You're not logged in."
             case LoginType.unRegistered:
                 fbButton.isEnabled = true
                 googelSignInButton.isEnabled = true
+                googleSignOutBtn.isHidden = true
                 loggedInLabel.text = "You've not registered yet."
             default:
                 print("default")
@@ -107,7 +121,10 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
                 FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
                     print("logged into both")
                     self.defaults.set(true, forKey: "userLoggedIn")
-                    self.loginType = LoginType.faisbook
+                    self.defaults.set(user!.uid, forKey: "FacebookUserId")
+                    self.defaults.set("Facebook", forKey: "LoggedInWith")
+                    self.setLoginType()
+                    self.buildDisplayString()
                 })
 
             } else {
@@ -124,7 +141,45 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, UIText
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         fireLog.logoutOfFirebase()
         defaults.set(false, forKey: "userLoggedIn")
-        loginType = nil
+        defaults.set("None", forKey: "LoggedInWith")
+        self.defaults.set("Logged Out", forKey: "FacebookUserId")
+        setLoginType()
+        buildDisplayString()
         print("loggedout")
     }
+    
+    // GIDSignInDelegate
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let err = error {
+            print(err.localizedDescription)
+            let alert = UIAlertController(title: "Error", message: "You are not able to log in with Google now. Either try Facebook login or check your connection and try again.", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+            
+        } else {
+            
+            let authentication = user.authentication
+            let credential = FIRGoogleAuthProvider.credential(withIDToken: (authentication?.idToken)!, accessToken: (authentication?.accessToken)!)
+            FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
+                print("Signed into Firebase")
+            })
+            self.defaults.set("Google", forKey: "LoggedInWith")
+            self.setLoginType()
+            self.buildDisplayString()
+            self.googleSignOutBtn.isHidden = false
+        }
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        print("Disconnected from Google:::::!!!!!")
+    }
+    
+    @IBAction func googleSignOutTapped(_ sender: Any) {
+        GIDSignIn.sharedInstance().disconnect()
+        defaults.set("None", forKey: "LoggedInWith")
+        setLoginType()
+        buildDisplayString()
+    }
+    
 }

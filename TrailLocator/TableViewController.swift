@@ -41,6 +41,10 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         navigationController?.toolbar.barTintColor = UIColor.myOrange()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.setStatusBarHidden(false, with: .none)
+    }
+    
     // Textfield delegate methods
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

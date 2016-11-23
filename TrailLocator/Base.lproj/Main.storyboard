@@ -169,7 +169,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j12-XS-WmP">
-                                <rect key="frame" x="141" y="20" width="93" height="28"/>
+                                <rect key="frame" x="141.5" y="20" width="93" height="28"/>
                                 <fontDescription key="fontDescription" name="COCOGOOSELETTERPRESS" family="COCOGOOSE LETTERPRESS" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -216,9 +216,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wasatch" translatesAutoresizingMaskIntoConstraints="NO" id="fiE-KQ-InX">
                                 <rect key="frame" x="-4" y="64" width="383" height="603"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youn's is logged in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIM-0X-BL3">
-                                <rect key="frame" x="42" y="265" width="291" height="25"/>
-                                <fontDescription key="fontDescription" name="COCOGOOSELETTERPRESS" family="COCOGOOSE LETTERPRESS" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youn's is logged in" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIM-0X-BL3">
+                                <rect key="frame" x="42" y="252" width="291" height="30"/>
+                                <fontDescription key="fontDescription" name="COCOGOOSELETTERPRESS" family="COCOGOOSE LETTERPRESS" pointSize="21"/>
                                 <color key="textColor" red="0.1984402948" green="0.19191655390000001" blue="0.78116987179999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -267,25 +267,41 @@
                                     <constraint firstAttribute="height" constant="63" id="cLS-3a-bH6"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4Y-xk-yXp">
+                                <rect key="frame" x="179" y="470" width="160" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="GSk-pg-ja0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Sign Out of Google">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="googleSignOutTapped:" destination="Ek4-KG-3PV" eventType="touchUpInside" id="8sJ-zJ-jYk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="50F-dB-X5G" firstAttribute="top" secondItem="TIM-0X-BL3" secondAttribute="bottom" constant="91" id="6DX-Oo-GGl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ua4-YJ-wrI" secondAttribute="trailing" constant="-20" id="7xO-hl-iri"/>
-                            <constraint firstItem="v7u-6Y-8x8" firstAttribute="top" secondItem="TIM-0X-BL3" secondAttribute="bottom" constant="102" id="AcO-k7-mHi"/>
+                            <constraint firstItem="96u-T1-OH7" firstAttribute="top" secondItem="L4Y-xk-yXp" secondAttribute="bottom" constant="164" id="BYa-oc-126"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TIM-0X-BL3" secondAttribute="trailing" constant="26" id="F10-e1-0qi"/>
                             <constraint firstItem="50F-dB-X5G" firstAttribute="centerY" secondItem="M2Z-VQ-Bdr" secondAttribute="centerY" constant="79" id="GFK-JZ-Xmb"/>
+                            <constraint firstItem="L4Y-xk-yXp" firstAttribute="top" secondItem="50F-dB-X5G" secondAttribute="bottom" constant="26" id="H9t-eL-x9f"/>
                             <constraint firstItem="fiE-KQ-InX" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="-20" id="JIk-2Y-2va"/>
                             <constraint firstItem="ua4-YJ-wrI" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" id="Kqs-Or-9ln"/>
                             <constraint firstItem="TIM-0X-BL3" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="26" id="Obs-iQ-JAk"/>
-                            <constraint firstItem="dkC-XR-VF3" firstAttribute="top" secondItem="TIM-0X-BL3" secondAttribute="bottom" constant="105" id="Qpb-CL-qbY"/>
+                            <constraint firstItem="dkC-XR-VF3" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="375" id="VS1-wV-KIm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L4Y-xk-yXp" secondAttribute="trailing" constant="20" id="bXi-KG-NTP"/>
+                            <constraint firstItem="v7u-6Y-8x8" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="372" id="dqe-lh-Jwa"/>
                             <constraint firstItem="ua4-YJ-wrI" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="-20" id="fd1-aT-BAT"/>
-                            <constraint firstItem="TIM-0X-BL3" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="245" id="iN5-vD-BYF"/>
+                            <constraint firstItem="TIM-0X-BL3" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="232" id="iN5-vD-BYF"/>
                             <constraint firstItem="fiE-KQ-InX" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="44" id="iWq-Zq-PC3"/>
                             <constraint firstAttribute="leadingMargin" secondItem="50F-dB-X5G" secondAttribute="leading" id="iyd-aG-Oud"/>
                             <constraint firstItem="qXO-Jn-35v" firstAttribute="top" secondItem="ua4-YJ-wrI" secondAttribute="bottom" constant="-35" id="mE4-Qc-KkG"/>
                             <constraint firstItem="96u-T1-OH7" firstAttribute="top" secondItem="fiE-KQ-InX" secondAttribute="bottom" id="n5g-fg-J2H"/>
                             <constraint firstAttribute="trailingMargin" secondItem="50F-dB-X5G" secondAttribute="trailing" id="qM3-k8-q1t"/>
+                            <constraint firstItem="50F-dB-X5G" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="361" id="qYF-nA-8Em"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fiE-KQ-InX" secondAttribute="trailing" constant="-20" id="r3J-Gx-NRq"/>
                             <constraint firstItem="qXO-Jn-35v" firstAttribute="centerX" secondItem="ua4-YJ-wrI" secondAttribute="centerX" id="tQn-sp-xbf"/>
                             <constraint firstItem="50F-dB-X5G" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="zBD-jN-T3a"/>
@@ -294,6 +310,7 @@
                     <connections>
                         <outlet property="fbButton" destination="dkC-XR-VF3" id="w64-kx-qSs"/>
                         <outlet property="googelSignInButton" destination="v7u-6Y-8x8" id="YOb-di-thB"/>
+                        <outlet property="googleSignOutBtn" destination="L4Y-xk-yXp" id="ZSs-TD-vIG"/>
                         <outlet property="loggedInLabel" destination="TIM-0X-BL3" id="omu-Wo-x34"/>
                         <outlet property="textFieldContainer" destination="50F-dB-X5G" id="GdM-H7-jQf"/>
                         <outlet property="toolBar" destination="ua4-YJ-wrI" id="7Ml-QT-pIp"/>
