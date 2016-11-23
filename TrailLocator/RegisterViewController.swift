@@ -163,6 +163,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSig
             let credential = FIRGoogleAuthProvider.credential(withIDToken: (authentication?.idToken)!, accessToken: (authentication?.accessToken)!)
             FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
                 print("Signed into Firebase")
+                self.defaults.set(true, forKey: "userLoggedIn")
             })
             self.defaults.set("Google", forKey: "LoggedInWith")
             self.setLoginType()
@@ -173,6 +174,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSig
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         print("Disconnected from Google:::::!!!!!")
+        defaults.set(false, forKey: "userLoggedIn")
     }
     
     @IBAction func googleSignOutTapped(_ sender: Any) {

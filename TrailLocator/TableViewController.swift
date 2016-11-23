@@ -15,14 +15,13 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var addTrailButton: UIBarButtonItem!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var toolBar: UIToolbar!
     
     
     var items = [TrailDict]()
     var itemsIndex: Int?
     let fbGetter = SprayFirebase()
-    var loggedIn = false
     let svndftch = SaveAndFetch()
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,12 +36,15 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         textField.backgroundColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 0.6)
         title = "TRAIL LOCATOR"
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.tryBlue(), NSFontAttributeName: UIFont(name: "COCOGOOSELETTERPRESS", size: 20)!]
-        navigationController?.hidesBarsOnSwipe = true
         navigationController?.toolbar.barTintColor = UIColor.myOrange()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         UIApplication.shared.setStatusBarHidden(false, with: .none)
+    }
+    
+    func goToAuth() {
+        
     }
     
     // Textfield delegate methods
@@ -74,6 +76,12 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.tableView.reloadData()
         tableView.isHidden = true
         return true
+    }
+    @IBAction func loginTapped(_ sender: Any) {
+        performSegue(withIdentifier: "registerSegue", sender: self)
+    }
+    @IBAction func profileTapped(_ sender: Any) {
+        performSegue(withIdentifier: "showProfile", sender: self)
     }
 
     // TableView DataSource Methods
@@ -109,9 +117,13 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
     }
     
+    func isLoggedIn() -> Bool {
+        return defaults.bool(forKey: "userLoggedIn")
+    }
+    
     @IBAction func addTrailClicked(_ sender: AnyObject) {
-        if self.loggedIn {
-            
+        if isLoggedIn() {
+            performSegue(withIdentifier: "addTrailSegue", sender: self)
         } else {
             showLoginAlert()
         }

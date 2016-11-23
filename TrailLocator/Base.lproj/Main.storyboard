@@ -28,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountain" translatesAutoresizingMaskIntoConstraints="NO" id="miI-KD-pPv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jlt-3K-IPR">
                                 <rect key="frame" x="0.0" y="113" width="375" height="510"/>
@@ -49,19 +49,39 @@
                                     <outlet property="delegate" destination="I3r-4B-7xJ" id="Kn0-oZ-zc2"/>
                                 </connections>
                             </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLF-51-kTF">
+                                <rect key="frame" x="-4" y="623" width="383" height="44"/>
+                                <items>
+                                    <barButtonItem title="Login" id="SPU-4h-zbh">
+                                        <connections>
+                                            <action selector="loginTapped:" destination="I3r-4B-7xJ" id="YB9-h4-KZJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ZT4-iX-mu6"/>
+                                    <barButtonItem title="Profile" id="OoX-3R-mxS">
+                                        <connections>
+                                            <action selector="profileTapped:" destination="I3r-4B-7xJ" id="Ntg-Xj-78z"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="1" green="0.34561301480000001" blue="0.0045820879240000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="miI-KD-pPv" secondAttribute="trailing" id="21G-gb-FUz"/>
                             <constraint firstItem="To8-oJ-MX3" firstAttribute="top" secondItem="PCK-JJ-Hmp" secondAttribute="bottom" id="5Qh-EZ-uNy"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="QLF-51-kTF" secondAttribute="leading" constant="20" id="7MH-YA-1pl"/>
                             <constraint firstItem="Jlt-3K-IPR" firstAttribute="top" secondItem="To8-oJ-MX3" secondAttribute="bottom" constant="1" id="8RC-8P-OSJ"/>
+                            <constraint firstItem="ASy-6j-pwd" firstAttribute="top" secondItem="QLF-51-kTF" secondAttribute="bottom" id="BmS-H3-9Nq"/>
                             <constraint firstItem="To8-oJ-MX3" firstAttribute="trailing" secondItem="Jlt-3K-IPR" secondAttribute="trailing" id="CEu-jf-Kxc"/>
                             <constraint firstItem="Jlt-3K-IPR" firstAttribute="leading" secondItem="jqm-ES-8h6" secondAttribute="leading" id="E2a-n3-6cE"/>
                             <constraint firstItem="miI-KD-pPv" firstAttribute="leading" secondItem="jqm-ES-8h6" secondAttribute="leading" id="FtL-xf-RI4"/>
                             <constraint firstItem="To8-oJ-MX3" firstAttribute="leading" secondItem="Jlt-3K-IPR" secondAttribute="leading" id="IkG-dm-D35"/>
+                            <constraint firstItem="QLF-51-kTF" firstAttribute="top" secondItem="Jlt-3K-IPR" secondAttribute="bottom" id="J79-NF-ppl"/>
                             <constraint firstItem="miI-KD-pPv" firstAttribute="top" secondItem="PCK-JJ-Hmp" secondAttribute="bottom" id="PYb-y9-4HZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QLF-51-kTF" secondAttribute="trailing" constant="-20" id="SYG-rZ-3X6"/>
                             <constraint firstItem="ASy-6j-pwd" firstAttribute="top" secondItem="miI-KD-pPv" secondAttribute="bottom" id="bYA-1C-U3b"/>
-                            <constraint firstItem="ASy-6j-pwd" firstAttribute="top" secondItem="Jlt-3K-IPR" secondAttribute="bottom" id="e0z-1z-AZW"/>
                             <constraint firstAttribute="trailing" secondItem="Jlt-3K-IPR" secondAttribute="trailing" id="g0h-iG-T2d"/>
                         </constraints>
                     </view>
@@ -87,6 +107,8 @@
                         <segue destination="Ek4-KG-3PV" kind="presentation" identifier="registerSegue" id="nxc-ph-Frp"/>
                         <segue destination="6O2-Q5-gVT" kind="show" identifier="showDetail" id="rdw-Hw-Fl3"/>
                         <segue destination="Mec-vz-bWn" kind="presentation" identifier="settingsSegue" id="QpJ-dv-NGd"/>
+                        <segue destination="Cam-TA-eEE" kind="presentation" identifier="showProfile" id="rnX-6H-eHJ"/>
+                        <segue destination="gcH-MJ-zuO" kind="presentation" identifier="addTrailSegue" id="FWW-MR-aCR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfC-PQ-oDB" sceneMemberID="firstResponder"/>
@@ -96,7 +118,7 @@
         <!--Navigation Controller-->
         <scene sceneID="6uX-HA-fyI">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="1vR-P7-pbV" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1vR-P7-pbV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rpE-QW-3dk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -114,6 +136,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kkv-Z6-P3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="706" y="357"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0HT-e2-3Y2">
+            <objects>
+                <viewController id="gcH-MJ-zuO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zh3-29-tdg"/>
+                        <viewControllerLayoutGuide type="bottom" id="hRR-1f-7rb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eLR-da-1yz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAa-JV-f6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-116" y="-403"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="h4f-ha-qFH">
+            <objects>
+                <viewController id="Cam-TA-eEE" customClass="ProfileViewController" customModule="TrailLocator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q3Q-aF-862"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zf9-ma-NOh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qoF-Dk-8C5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2D-yR-vU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="705" y="-403"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="EGI-bI-Hvf">
