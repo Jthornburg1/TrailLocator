@@ -98,7 +98,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="1vR-P7-pbV" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rpE-QW-3dk">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rpE-QW-3dk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -222,13 +222,6 @@
                                 <color key="textColor" red="0.1984402948" green="0.19191655390000001" blue="0.78116987179999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50F-dB-X5G">
-                                <rect key="frame" x="16" y="298" width="343" height="63"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="cLS-3a-bH6"/>
-                                </constraints>
-                            </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ua4-YJ-wrI">
                                 <rect key="frame" x="-4" y="20" width="383" height="44"/>
                                 <items>
@@ -246,26 +239,47 @@
                                 <color key="textColor" red="1" green="0.34561301480000001" blue="0.0045820879240000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkC-XR-VF3" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="28" y="307" width="115" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50F-dB-X5G">
+                                <rect key="frame" x="16" y="381" width="343" height="63"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7u-6Y-8x8" customClass="GIDSignInButton">
+                                        <rect key="frame" x="207" y="11" width="121" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="121" id="0JD-gU-CzM"/>
+                                            <constraint firstAttribute="height" constant="40" id="DIr-5X-Da7"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkC-XR-VF3" customClass="FBSDKLoginButton">
+                                        <rect key="frame" x="21" y="14" width="115" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ie6-9t-FqO"/>
+                                            <constraint firstAttribute="width" constant="115" id="q61-sQ-oYb"/>
+                                        </constraints>
+                                        <state key="normal" title="FBButton"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="ie6-9t-FqO"/>
-                                    <constraint firstAttribute="width" constant="115" id="q61-sQ-oYb"/>
+                                    <constraint firstItem="v7u-6Y-8x8" firstAttribute="leading" secondItem="50F-dB-X5G" secondAttribute="trailing" constant="-136" id="CU5-Iw-7gU"/>
+                                    <constraint firstItem="dkC-XR-VF3" firstAttribute="top" secondItem="50F-dB-X5G" secondAttribute="bottom" constant="-49" id="RwY-YG-5ck"/>
+                                    <constraint firstAttribute="leading" secondItem="dkC-XR-VF3" secondAttribute="trailing" constant="-136" id="Vtu-ZX-Qtg"/>
+                                    <constraint firstAttribute="height" constant="63" id="cLS-3a-bH6"/>
                                 </constraints>
-                                <state key="normal" title="FBButton"/>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="50F-dB-X5G" firstAttribute="top" secondItem="TIM-0X-BL3" secondAttribute="bottom" constant="91" id="6DX-Oo-GGl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ua4-YJ-wrI" secondAttribute="trailing" constant="-20" id="7xO-hl-iri"/>
+                            <constraint firstItem="v7u-6Y-8x8" firstAttribute="top" secondItem="TIM-0X-BL3" secondAttribute="bottom" constant="102" id="AcO-k7-mHi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TIM-0X-BL3" secondAttribute="trailing" constant="26" id="F10-e1-0qi"/>
-                            <constraint firstItem="50F-dB-X5G" firstAttribute="centerY" secondItem="M2Z-VQ-Bdr" secondAttribute="centerY" constant="-3.5" id="GFK-JZ-Xmb"/>
+                            <constraint firstItem="50F-dB-X5G" firstAttribute="centerY" secondItem="M2Z-VQ-Bdr" secondAttribute="centerY" constant="79" id="GFK-JZ-Xmb"/>
                             <constraint firstItem="fiE-KQ-InX" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="-20" id="JIk-2Y-2va"/>
                             <constraint firstItem="ua4-YJ-wrI" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" id="Kqs-Or-9ln"/>
                             <constraint firstItem="TIM-0X-BL3" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="26" id="Obs-iQ-JAk"/>
-                            <constraint firstItem="dkC-XR-VF3" firstAttribute="top" secondItem="50F-dB-X5G" secondAttribute="bottom" constant="-54" id="V31-4H-9TM"/>
+                            <constraint firstItem="dkC-XR-VF3" firstAttribute="top" secondItem="TIM-0X-BL3" secondAttribute="bottom" constant="105" id="Qpb-CL-qbY"/>
                             <constraint firstItem="ua4-YJ-wrI" firstAttribute="leading" secondItem="M2Z-VQ-Bdr" secondAttribute="leadingMargin" constant="-20" id="fd1-aT-BAT"/>
-                            <constraint firstItem="50F-dB-X5G" firstAttribute="leading" secondItem="dkC-XR-VF3" secondAttribute="trailing" constant="-127" id="gYc-Nj-KRg"/>
                             <constraint firstItem="TIM-0X-BL3" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="245" id="iN5-vD-BYF"/>
                             <constraint firstItem="fiE-KQ-InX" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="44" id="iWq-Zq-PC3"/>
                             <constraint firstAttribute="leadingMargin" secondItem="50F-dB-X5G" secondAttribute="leading" id="iyd-aG-Oud"/>
@@ -274,12 +288,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="50F-dB-X5G" secondAttribute="trailing" id="qM3-k8-q1t"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fiE-KQ-InX" secondAttribute="trailing" constant="-20" id="r3J-Gx-NRq"/>
                             <constraint firstItem="qXO-Jn-35v" firstAttribute="centerX" secondItem="ua4-YJ-wrI" secondAttribute="centerX" id="tQn-sp-xbf"/>
-                            <constraint firstItem="50F-dB-X5G" firstAttribute="top" secondItem="ap2-6J-Sq8" secondAttribute="bottom" constant="278" id="tfr-vW-aDc"/>
                             <constraint firstItem="50F-dB-X5G" firstAttribute="centerX" secondItem="M2Z-VQ-Bdr" secondAttribute="centerX" id="zBD-jN-T3a"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="fbButton" destination="dkC-XR-VF3" id="w64-kx-qSs"/>
+                        <outlet property="googelSignInButton" destination="v7u-6Y-8x8" id="YOb-di-thB"/>
                         <outlet property="loggedInLabel" destination="TIM-0X-BL3" id="omu-Wo-x34"/>
                         <outlet property="textFieldContainer" destination="50F-dB-X5G" id="GdM-H7-jQf"/>
                         <outlet property="toolBar" destination="ua4-YJ-wrI" id="7Ml-QT-pIp"/>
@@ -360,7 +374,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jkq-km-cDf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dve-ZZ-8ME">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Dve-ZZ-8ME">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
