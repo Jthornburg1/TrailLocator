@@ -22,6 +22,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     let fbGetter = SprayFirebase()
     let svndftch = SaveAndFetch()
     let defaults = UserDefaults.standard
+    let fireSpray = SprayFirebase()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +59,9 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
             if Reachable.isConnectedToNetwork() {
                 MakeTrailArray.makeTrails(term: last!, completion: { (trails) in
                     self.items = trails
+                    if trails.count > 0 {
+                        self.fireSpray.addNewArray(textField.text!, trailArray: trails)
+                    }
                     self.tableView.reloadData()
                 })
             } else {

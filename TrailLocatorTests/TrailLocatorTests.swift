@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TrailLocator
+//@testable import TrailLocator
 
 class TrailLocatorTests: XCTestCase {
     

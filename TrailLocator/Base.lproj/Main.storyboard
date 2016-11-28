@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="706" y="357"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Trail View Controller-->
         <scene sceneID="0HT-e2-3Y2">
             <objects>
-                <viewController id="gcH-MJ-zuO" sceneMemberID="viewController">
+                <viewController id="gcH-MJ-zuO" customClass="AddTrailViewController" customModule="TrailLocator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zh3-29-tdg"/>
                         <viewControllerLayoutGuide type="bottom" id="hRR-1f-7rb"/>
@@ -148,12 +148,137 @@
                     <view key="view" contentMode="scaleToFill" id="eLR-da-1yz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2h-gY-Pm5">
+                                <rect key="frame" x="320" y="99" width="343" height="287"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please provide as much detail as possible." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wn-fv-OL2">
+                                        <rect key="frame" x="8" y="8" width="327" height="26"/>
+                                        <fontDescription key="fontDescription" name="COCOGOOSELETTERPRESS" family="COCOGOOSE LETTERPRESS" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g3v-Jh-uAu">
+                                        <rect key="frame" x="8" y="42" width="327" height="214"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97l-Hf-l7n">
+                                        <rect key="frame" x="115" y="266" width="113" height="30"/>
+                                        <fontDescription key="fontDescription" name="COCOGOOSELETTERPRESS" family="COCOGOOSE LETTERPRESS" pointSize="17"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveDescriptionTapped:" destination="gcH-MJ-zuO" eventType="touchUpInside" id="sOp-PS-06e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="0wn-fv-OL2" firstAttribute="top" secondItem="q2h-gY-Pm5" secondAttribute="top" constant="8" id="1Oy-q8-WQs"/>
+                                    <constraint firstAttribute="bottom" secondItem="97l-Hf-l7n" secondAttribute="bottom" constant="-9" id="6Ib-Tj-j7e"/>
+                                    <constraint firstAttribute="trailing" secondItem="0wn-fv-OL2" secondAttribute="trailing" constant="8" id="95g-Qw-QO7"/>
+                                    <constraint firstAttribute="trailing" secondItem="97l-Hf-l7n" secondAttribute="trailing" constant="115" id="Ikg-lH-VTh"/>
+                                    <constraint firstItem="97l-Hf-l7n" firstAttribute="leading" secondItem="q2h-gY-Pm5" secondAttribute="leading" constant="115" id="JtV-Hw-pPX"/>
+                                    <constraint firstItem="97l-Hf-l7n" firstAttribute="top" secondItem="g3v-Jh-uAu" secondAttribute="bottom" constant="10" id="KgZ-4r-qvM"/>
+                                    <constraint firstItem="g3v-Jh-uAu" firstAttribute="leading" secondItem="q2h-gY-Pm5" secondAttribute="leading" constant="8" id="RBu-jf-lk0"/>
+                                    <constraint firstItem="0wn-fv-OL2" firstAttribute="leading" secondItem="q2h-gY-Pm5" secondAttribute="leading" constant="8" id="ad2-Aq-9TV"/>
+                                    <constraint firstItem="g3v-Jh-uAu" firstAttribute="top" secondItem="0wn-fv-OL2" secondAttribute="bottom" constant="8" id="m3w-VM-J8n"/>
+                                    <constraint firstAttribute="trailing" secondItem="g3v-Jh-uAu" secondAttribute="trailing" constant="8" id="osD-cq-osC"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6p-RF-Xyf">
+                                <rect key="frame" x="-4" y="20" width="383" height="44"/>
+                                <items>
+                                    <barButtonItem title="Cancel" id="6AE-Cs-Ehf">
+                                        <connections>
+                                            <action selector="cancelTapped:" destination="gcH-MJ-zuO" id="Tco-Ci-Y5f"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JDz-0T-BbH"/>
+                                    <barButtonItem title="Submit" id="hts-bC-eql"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrailLocator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecp-9x-2Vb">
+                                <rect key="frame" x="122" y="26" width="130" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="OV4-23-GRr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="COCOGOOSELETTERPRESS" family="COCOGOOSE LETTERPRESS" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the name of the closest city or town." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6M-ok-kvZ">
+                                <rect key="frame" x="16" y="107" width="296" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPN-Pr-Nd2">
+                                <rect key="frame" x="16" y="78" width="343" height="21"/>
+                                <string key="text">To add a trail to our database, complete the following fields. You must be AT the starting location of the trail to submit because your phone's location will provide starting coordinates.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the state" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TwL-KE-fK6">
+                                <rect key="frame" x="16" y="145" width="187" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4a3-VC-jjR">
+                                <rect key="frame" x="16" y="183" width="121" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="kph-06-ToN"/>
+                                </constraints>
+                                <state key="normal" title="Add a description"/>
+                                <connections>
+                                    <action selector="descriptionTapped:" destination="gcH-MJ-zuO" eventType="touchUpInside" id="Mci-Ox-QAA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HPN-Pr-Nd2" firstAttribute="leading" secondItem="eLR-da-1yz" secondAttribute="leadingMargin" id="1uc-GO-Zus"/>
+                            <constraint firstItem="HPN-Pr-Nd2" firstAttribute="top" secondItem="s6p-RF-Xyf" secondAttribute="bottom" constant="14" id="62D-7n-vzS"/>
+                            <constraint firstItem="q2h-gY-Pm5" firstAttribute="top" secondItem="zh3-29-tdg" secondAttribute="bottom" constant="79" id="GAM-iK-vkx"/>
+                            <constraint firstItem="hRR-1f-7rb" firstAttribute="top" secondItem="q2h-gY-Pm5" secondAttribute="bottom" constant="281" id="J0H-f4-1uI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s6p-RF-Xyf" secondAttribute="trailing" constant="-20" id="KnD-G8-i4c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HPN-Pr-Nd2" secondAttribute="trailing" id="Mjy-wH-lfU"/>
+                            <constraint firstItem="TwL-KE-fK6" firstAttribute="top" secondItem="r6M-ok-kvZ" secondAttribute="bottom" constant="8" id="S0q-cO-mDn"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="TwL-KE-fK6" secondAttribute="leading" id="T0L-sl-N99"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="q2h-gY-Pm5" secondAttribute="leading" constant="-304" id="YXO-8a-jEs"/>
+                            <constraint firstItem="s6p-RF-Xyf" firstAttribute="leading" secondItem="eLR-da-1yz" secondAttribute="leadingMargin" constant="-20" id="Yef-GK-D1k"/>
+                            <constraint firstItem="ecp-9x-2Vb" firstAttribute="top" secondItem="s6p-RF-Xyf" secondAttribute="bottom" constant="-38" id="ayK-0j-zP1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r6M-ok-kvZ" secondAttribute="trailing" constant="47" id="euY-S7-zMp"/>
+                            <constraint firstItem="s6p-RF-Xyf" firstAttribute="top" secondItem="zh3-29-tdg" secondAttribute="bottom" id="fCL-vN-R81"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TwL-KE-fK6" secondAttribute="trailing" constant="156" id="huu-fd-r0D"/>
+                            <constraint firstItem="4a3-VC-jjR" firstAttribute="top" secondItem="TwL-KE-fK6" secondAttribute="bottom" constant="8" id="i4n-zv-DFF"/>
+                            <constraint firstItem="ecp-9x-2Vb" firstAttribute="leading" secondItem="eLR-da-1yz" secondAttribute="leadingMargin" constant="106" id="kdr-v6-GA0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ecp-9x-2Vb" secondAttribute="trailing" constant="107" id="lvV-gI-atg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="r6M-ok-kvZ" secondAttribute="leading" id="oSo-JP-jbX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4a3-VC-jjR" secondAttribute="leading" id="pxx-Ww-w59"/>
+                            <constraint firstItem="r6M-ok-kvZ" firstAttribute="top" secondItem="HPN-Pr-Nd2" secondAttribute="bottom" constant="8" id="quc-wt-NYh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q2h-gY-Pm5" secondAttribute="trailing" constant="-304" id="zrR-LK-SsD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityText" destination="r6M-ok-kvZ" id="2a6-4P-1Y6"/>
+                        <outlet property="descriptionInstructionLabel" destination="0wn-fv-OL2" id="bVy-60-0ru"/>
+                        <outlet property="descriptionTextView" destination="g3v-Jh-uAu" id="g5p-CL-S9O"/>
+                        <outlet property="descriptionView" destination="q2h-gY-Pm5" id="hCr-KT-5al"/>
+                        <outlet property="deskButton" destination="4a3-VC-jjR" id="ouR-rE-jBx"/>
+                        <outlet property="leftViewLayoutConstraint" destination="YXO-8a-jEs" id="U7Z-4r-DGk"/>
+                        <outlet property="rightViewLayoutConstraint" destination="zrR-LK-SsD" id="UUe-G1-Uob"/>
+                        <outlet property="stateText" destination="TwL-KE-fK6" id="8uk-Ed-y5P"/>
+                        <outlet property="titleLabel" destination="ecp-9x-2Vb" id="hZv-2U-Mc7"/>
+                        <outlet property="toolbar" destination="s6p-RF-Xyf" id="vcH-ah-i2M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAa-JV-f6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-116" y="-403"/>
+            <point key="canvasLocation" x="-640.79999999999995" y="-403.44827586206901"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="h4f-ha-qFH">
@@ -227,7 +352,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j12-XS-WmP">
-                                <rect key="frame" x="141.5" y="20" width="93" height="28"/>
+                                <rect key="frame" x="141" y="20" width="93" height="28"/>
                                 <fontDescription key="fontDescription" name="COCOGOOSELETTERPRESS" family="COCOGOOSE LETTERPRESS" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
