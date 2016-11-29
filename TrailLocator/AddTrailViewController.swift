@@ -54,6 +54,7 @@ class AddTrailViewController: UIViewController {
         urlText.delegate = self
         cityText.delegate = self
         stateText.delegate = self
+        trailNameText.delegate = self
         pickerViewButton.setTitle("OK", for: .normal)
         pickerViewButton.backgroundColor = UIColor.tryBlue()
         pickerViewButton.setTitleColor(UIColor.white, for: .normal)
