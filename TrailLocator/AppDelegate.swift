@@ -33,11 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
-        let firebaseGet = SprayFirebase()
-        firebaseGet.getEveryTrail { (dict, error) in
-            
-        }
-        
         for family: String in UIFont.familyNames
         {
             print("\(family)")

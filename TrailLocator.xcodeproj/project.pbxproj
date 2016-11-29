@@ -42,9 +42,10 @@
 		D2A649751D79B4D500ACDF85 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A649741D79B4D500ACDF85 /* CustomCell.xib */; };
 		D2A649771D79B4DD00ACDF85 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A649761D79B4DD00ACDF85 /* DetailCell.xib */; };
 		D2A649791D79B4E800ACDF85 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A649781D79B4E800ACDF85 /* SettingsCell.xib */; };
-		D2A6497C1D79B8A800ACDF85 /* FirebaseGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6497B1D79B8A800ACDF85 /* FirebaseGet.swift */; };
+		D2A6497C1D79B8A800ACDF85 /* FirebaseCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6497B1D79B8A800ACDF85 /* FirebaseCalls.swift */; };
 		D2A6497E1D79BA0200ACDF85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2A6497D1D79BA0200ACDF85 /* GoogleService-Info.plist */; };
 		D2AC10DC1DE5F3F800CFC8BF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC10DB1DE5F3F800CFC8BF /* Constants.swift */; };
+		D2B5290E1DEE077B00510BDE /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B5290D1DEE077B00510BDE /* UIView+extensions.swift */; };
 		D2C71C261D8DCAC40093BA81 /* FirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C71C251D8DCAC40093BA81 /* FirebaseAuth.swift */; };
 		D2CAC3F01D7EFB920017E909 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAC3EF1D7EFB920017E909 /* RegisterViewController.swift */; };
 		D9BB5B4616765697322D026D /* Pods_TrailLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A842574EC0783259CC93DEAC /* Pods_TrailLocator.framework */; };
@@ -114,9 +115,10 @@
 		D2A649741D79B4D500ACDF85 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		D2A649761D79B4DD00ACDF85 /* DetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
 		D2A649781D79B4E800ACDF85 /* SettingsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
-		D2A6497B1D79B8A800ACDF85 /* FirebaseGet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseGet.swift; sourceTree = "<group>"; };
+		D2A6497B1D79B8A800ACDF85 /* FirebaseCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseCalls.swift; sourceTree = "<group>"; };
 		D2A6497D1D79BA0200ACDF85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D2AC10DB1DE5F3F800CFC8BF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D2B5290D1DEE077B00510BDE /* UIView+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
 		D2C71C251D8DCAC40093BA81 /* FirebaseAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuth.swift; sourceTree = "<group>"; };
 		D2CAC3EF1D7EFB920017E909 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -247,6 +249,7 @@
 				D2A6494E1D79B21B00ACDF85 /* PropertySorter.swift */,
 				D2A649501D79B22400ACDF85 /* MapTrail.swift */,
 				D2AC10DB1DE5F3F800CFC8BF /* Constants.swift */,
+				D2B5290D1DEE077B00510BDE /* UIView+extensions.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -302,7 +305,7 @@
 		D2A6497A1D79B89800ACDF85 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				D2A6497B1D79B8A800ACDF85 /* FirebaseGet.swift */,
+				D2A6497B1D79B8A800ACDF85 /* FirebaseCalls.swift */,
 				D2C71C251D8DCAC40093BA81 /* FirebaseAuth.swift */,
 			);
 			name = Firebase;
@@ -590,6 +593,7 @@
 				D2A6496A1D79B3C100ACDF85 /* WebViewController.swift in Sources */,
 				D25FAC131DB43374001860A0 /* MakeTrailArray.swift in Sources */,
 				D2A6491B1D79AF2100ACDF85 /* TrailLocator.xcdatamodeld in Sources */,
+				D2B5290E1DEE077B00510BDE /* UIView+extensions.swift in Sources */,
 				D2A649681D79B3B500ACDF85 /* SettingsViewController.swift in Sources */,
 				D2A649701D79B42F00ACDF85 /* DetailCell.swift in Sources */,
 				D2A6495C1D79B2FC00ACDF85 /* TrailDict.swift in Sources */,
@@ -611,7 +615,7 @@
 				D2A649131D79AF2100ACDF85 /* AppDelegate.swift in Sources */,
 				D25FAC0F1DB42AD9001860A0 /* APIService.swift in Sources */,
 				D2A6494D1D79B21500ACDF85 /* UIImageView+Extensions.swift in Sources */,
-				D2A6497C1D79B8A800ACDF85 /* FirebaseGet.swift in Sources */,
+				D2A6497C1D79B8A800ACDF85 /* FirebaseCalls.swift in Sources */,
 				D2A6496C1D79B3F400ACDF85 /* ConfigureCell.swift in Sources */,
 				D2A649491D79B20000ACDF85 /* JsonDigger.swift in Sources */,
 			);

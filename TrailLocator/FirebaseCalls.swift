@@ -98,16 +98,73 @@ struct SprayFirebase: AddTrails {
         ref.updateChildValues(childUpdates)
     }
     
-    func getEveryTrail(completion: @escaping (_ trails: [String : AnyObject]?, _ error: NSError?) -> Void) {
-        var dict = [String : AnyObject]()
-        ref.child("cities").observe(FIRDataEventType.value, with: { (snapShot) in
-            if let dct = snapShot.value as? [String : AnyObject] {
-                dict = dct
-                for (id, _) in dict {
-                    print(id)
-                    
+    // Storage
+    func storImageToFirebase(image: UIImage, pathString: String, completion: @escaping (Bool, URL?) -> Void) {
+        let storageRef = FIRStorage.storage().reference().child(pathString)
+        let smallImage = image.resizeWithPercentage(percentage: 0.2)
+        if let uploadData = UIImagePNGRepresentation(smallImage!) {
+            storageRef.put(uploadData, metadata: nil, completion: { (metaData, error) in
+                if error != nil {
+                    DispatchQueue.main.async(execute: { 
+                        completion(false, nil)
+                    })
+                } else {
+                    let str = metaData?.downloadURL()
+                    DispatchQueue.main.async(execute: { 
+                        completion(true, str)
+                    })
                 }
-            }
-        })
+            })
+        }
+    }
+    
+    func addNewTrail(trail: TrailDict) {
+        
     }
 }
+
+
+
+//fireCalls.authenticate(email, password: password) { (success, uid) in
+//    if success {
+//        var imag: UIImage?
+//        
+//        if self.photoChosen == true {
+//            if let img = self.profileImageView.image {
+//                imag = img
+//                self.fireCalls.storeImageToFirebase(imag!, pathString: uid!, completion: { (success, urlString) in
+//                    if success {
+//                        let str = String(urlString!)
+//                        self.fireCalls.addUserToDatabase(uid!, name: name, password: password, email: email, image: str, completion: { (success, error) in
+//                            if success {
+//                                print("success")
+//                                let notif = NSNotification(name: "registered", object: nil)
+//                                self.noifications.postNotification(notif)
+//                                self.dismissViewControllerAnimated(true, completion: nil)
+//                            } else {
+//                                self.showAlert("Failed to save", message: "Please re-enter the data")
+//                                self.clearFields()
+//                            }
+//                        })
+//                    }
+//                })
+//            }
+//        } else {
+//            self.fireCalls.addUserToDatabase(uid!, name: name, password: password, email: email, image: "", completion: { (success, error) in
+//                if success {
+//                    print("success")
+//                    let notif = NSNotification(name: "registered", object: nil)
+//                    self.noifications.postNotification(notif)
+//                    self.dismissViewControllerAnimated(true, completion: nil)
+//                } else {
+//                    self.showAlert("Failed to save", message: "Please re-enter the data")
+//                    self.clearFields()
+//                }
+//            })
+//            
+//        }
+//    } else {
+//        self.showAlert("Failure.", message: "You'll never cut it on this app because you produced an error!")
+//    }
+//}
+//

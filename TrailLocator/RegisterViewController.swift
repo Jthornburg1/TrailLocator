@@ -121,7 +121,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSig
                 FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
                     print("logged into both")
                     self.defaults.set(true, forKey: "userLoggedIn")
-                    self.defaults.set(user!.uid, forKey: "FacebookUserId")
+                    self.defaults.set(user!.uid, forKey: "firebaseUserId")
                     self.defaults.set("Facebook", forKey: "LoggedInWith")
                     self.setLoginType()
                     self.buildDisplayString()
@@ -142,7 +142,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSig
         fireLog.logoutOfFirebase()
         defaults.set(false, forKey: "userLoggedIn")
         defaults.set("None", forKey: "LoggedInWith")
-        self.defaults.set("Logged Out", forKey: "FacebookUserId")
+        self.defaults.set(nil, forKey: "firebaseUserId")
         setLoginType()
         buildDisplayString()
         print("loggedout")
@@ -164,6 +164,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSig
             FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
                 print("Signed into Firebase")
                 self.defaults.set(true, forKey: "userLoggedIn")
+                self.defaults.set(user!.uid, forKey: "firebaseUserId")
             })
             self.defaults.set("Google", forKey: "LoggedInWith")
             self.setLoginType()
@@ -175,6 +176,7 @@ class RegisterViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSig
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         print("Disconnected from Google:::::!!!!!")
         defaults.set(false, forKey: "userLoggedIn")
+        defaults.set(nil, forKey: "firebaseUserId")
     }
     
     @IBAction func googleSignOutTapped(_ sender: Any) {

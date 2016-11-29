@@ -28,6 +28,8 @@ open class TrailDict {
     var url2: String?
     var url3: String?
     var actArray: NSArray?
+    var userId: String?
+    var trailId: String?
     
     
     
