@@ -52,15 +52,20 @@ class AddTrailViewController: UIViewController {
         deskButton.tintColor = UIColor.tryBlue()
         activityPicker.delegate = self
         urlText.delegate = self
+        urlText.textColor = UIColor.myOrange()
         cityText.delegate = self
+        cityText.textColor = UIColor.myOrange()
         stateText.delegate = self
+        stateText.textColor = UIColor.myOrange()
         trailNameText.delegate = self
+        trailNameText.textColor = UIColor.myOrange()
         pickerViewButton.setTitle("OK", for: .normal)
         pickerViewButton.backgroundColor = UIColor.tryBlue()
         pickerViewButton.setTitleColor(UIColor.white, for: .normal)
         pickerViewButton.layer.cornerRadius = 10
         trailUseButton.tintColor = UIColor.tryBlue()
         useText.isHidden = true
+        useText.textColor = UIColor.myOrange()
     }
     
     @IBAction func saveDescriptionTapped(_ sender: Any) {
@@ -75,6 +80,7 @@ class AddTrailViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func descriptionTapped(_ sender: Any) {
+        hideKeyBoard()
         animateConstraint(constraint: rightViewLayoutConstraint, endConstant: 0.0, duration: 0.5)
         animateConstraint(constraint: leftViewLayoutConstraint, endConstant: 0.0, duration: 0.5)
         instructionLabel.isHidden = true
@@ -98,8 +104,9 @@ class AddTrailViewController: UIViewController {
     }
     
     @IBAction func addUseTapped(_ sender: Any) {
-            animateConstraint(constraint: pickerRightConstraint, endConstant: 0.0, duration: 0.5)
-            animateConstraint(constraint: pickerLeftConstraint, endConstant: 0.0, duration: 0.5)
+        hideKeyBoard()
+        animateConstraint(constraint: pickerRightConstraint, endConstant: 0.0, duration: 0.5)
+        animateConstraint(constraint: pickerLeftConstraint, endConstant: 0.0, duration: 0.5)
     }
     
     func animateConstraint(constraint: NSLayoutConstraint, endConstant: CGFloat, duration: Double) {
@@ -173,6 +180,12 @@ extension AddTrailViewController: UITextFieldDelegate {
         return true
     }
     
+    func hideKeyBoard() {
+        cityText.resignFirstResponder()
+        stateText.resignFirstResponder()
+        trailNameText.resignFirstResponder()
+        urlText.resignFirstResponder()
+    }
 }
 
 extension AddTrailViewController {

@@ -176,7 +176,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the name of the closest city or town." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6M-ok-kvZ">
-                                <rect key="frame" x="16" y="187.5" width="296" height="30"/>
+                                <rect key="frame" x="16" y="187.5" width="289" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -189,7 +189,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the state" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TwL-KE-fK6">
-                                <rect key="frame" x="16" y="225.5" width="187" height="30"/>
+                                <rect key="frame" x="16" y="225.5" width="177" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -332,10 +332,10 @@
                             <constraint firstItem="ecp-9x-2Vb" firstAttribute="top" secondItem="s6p-RF-Xyf" secondAttribute="bottom" constant="-38" id="ayK-0j-zP1"/>
                             <constraint firstItem="NOR-we-gA4" firstAttribute="width" secondItem="eLR-da-1yz" secondAttribute="height" multiplier="289:667" id="b8m-AI-phT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ouw-ik-q15" secondAttribute="trailing" constant="54" id="boh-F7-KBk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="r6M-ok-kvZ" secondAttribute="trailing" constant="47" id="euY-S7-zMp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r6M-ok-kvZ" secondAttribute="trailing" constant="54" id="euY-S7-zMp"/>
                             <constraint firstItem="s6p-RF-Xyf" firstAttribute="top" secondItem="zh3-29-tdg" secondAttribute="bottom" id="fCL-vN-R81"/>
                             <constraint firstItem="Ouw-ik-q15" firstAttribute="leading" secondItem="T2s-dc-6TZ" secondAttribute="trailing" constant="22" id="g51-Mf-16h"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TwL-KE-fK6" secondAttribute="trailing" constant="156" id="huu-fd-r0D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TwL-KE-fK6" secondAttribute="trailing" constant="166" id="huu-fd-r0D"/>
                             <constraint firstItem="4a3-VC-jjR" firstAttribute="top" secondItem="TwL-KE-fK6" secondAttribute="bottom" constant="8" id="i4n-zv-DFF"/>
                             <constraint firstItem="ecp-9x-2Vb" firstAttribute="leading" secondItem="eLR-da-1yz" secondAttribute="leadingMargin" constant="106" id="kdr-v6-GA0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ecp-9x-2Vb" secondAttribute="trailing" constant="107" id="lvV-gI-atg"/>
@@ -666,7 +666,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jkq-km-cDf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Dve-ZZ-8ME">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dve-ZZ-8ME">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
