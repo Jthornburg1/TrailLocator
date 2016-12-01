@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Photos
+import CoreLocation
 
 class AddTrailViewController: UIViewController {
     
@@ -39,6 +40,8 @@ class AddTrailViewController: UIViewController {
     let defaults = UserDefaults.standard
     var image: UIImage?
     var descr: String?
+    let locationManager = CLLocationManager()
+    var coordinate: (Double, Double)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,9 +66,11 @@ class AddTrailViewController: UIViewController {
         pickerViewButton.backgroundColor = UIColor.tryBlue()
         pickerViewButton.setTitleColor(UIColor.white, for: .normal)
         pickerViewButton.layer.cornerRadius = 10
+        addPhotoButton.setTitleColor(UIColor.tryBlue(), for: .normal)
         trailUseButton.tintColor = UIColor.tryBlue()
         useText.isHidden = true
         useText.textColor = UIColor.myOrange()
+        configureForLocationAccess()
     }
     
     @IBAction func saveDescriptionTapped(_ sender: Any) {
@@ -275,5 +280,38 @@ extension AddTrailViewController: UINavigationControllerDelegate, UIScrollViewDe
             break
         }
         completion(tOrF)
+    }
+}
+
+extension AddTrailViewController: CLLocationManagerDelegate {
+    
+    func configureForLocationAccess() {
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        locationManager.stopUpdatingLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let currentLocation = locations.last {
+            coordinate = (currentLocation.coordinate.latitude, currentLocation.coordinate.longitude)
+        }
+        
+        
+    }
+    
+    func getUserCoordinatesAsNSNumber() -> (NSNumber, NSNumber) {
+        
+        if let coord = coordinate {
+            let lat = coord.0 as NSNumber
+            let long = coord.1 as NSNumber
+            
+            return (lat, long)
+        }
+        return (0, 0)
     }
 }
