@@ -127,7 +127,8 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBAction func addTrailClicked(_ sender: AnyObject) {
         if isLoggedIn() {
-            performSegue(withIdentifier: "addTrailSegue", sender: self)
+            let destination = AddNewTrailViewController(nibName: "AddNewTrailViewController", bundle: nil)
+            present(destination, animated: true, completion: nil)
         } else {
             showLoginAlert()
         }

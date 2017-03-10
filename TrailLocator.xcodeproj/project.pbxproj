@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94C680CE1E72F56900281408 /* AddNewTrailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C680CC1E72F56900281408 /* AddNewTrailViewController.swift */; };
+		94C680CF1E72F56900281408 /* AddNewTrailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94C680CD1E72F56900281408 /* AddNewTrailViewController.xib */; };
+		94C680D11E72F71C00281408 /* AddNewTrail+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C680D01E72F71C00281408 /* AddNewTrail+Extensions.swift */; };
 		D25FAC0F1DB42AD9001860A0 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25FAC0E1DB42AD9001860A0 /* APIService.swift */; };
 		D25FAC111DB42EF0001860A0 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25FAC101DB42EF0001860A0 /* Parser.swift */; };
 		D25FAC131DB43374001860A0 /* MakeTrailArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25FAC121DB43374001860A0 /* MakeTrailArray.swift */; };
@@ -71,6 +74,9 @@
 /* Begin PBXFileReference section */
 		0035F1510C6568863E2E11A9 /* Pods-TrailLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator.debug.xcconfig"; sourceTree = "<group>"; };
 		55483331993F358EF5F8670F /* Pods-TrailLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailLocator.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator.release.xcconfig"; sourceTree = "<group>"; };
+		94C680CC1E72F56900281408 /* AddNewTrailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewTrailViewController.swift; sourceTree = "<group>"; };
+		94C680CD1E72F56900281408 /* AddNewTrailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewTrailViewController.xib; sourceTree = "<group>"; };
+		94C680D01E72F71C00281408 /* AddNewTrail+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddNewTrail+Extensions.swift"; sourceTree = "<group>"; };
 		A842574EC0783259CC93DEAC /* Pods_TrailLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrailLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20188BC1DE509C7001CCE05 /* TrailLocator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrailLocator-Bridging-Header.h"; sourceTree = "<group>"; };
 		D25FAC0E1DB42AD9001860A0 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -288,6 +294,9 @@
 				D2CAC3EF1D7EFB920017E909 /* RegisterViewController.swift */,
 				D2A198E71DE647840008CCC3 /* ProfileViewController.swift */,
 				D2A198E91DE649E30008CCC3 /* AddTrailViewController.swift */,
+				94C680CC1E72F56900281408 /* AddNewTrailViewController.swift */,
+				94C680CD1E72F56900281408 /* AddNewTrailViewController.xib */,
+				94C680D01E72F71C00281408 /* AddNewTrail+Extensions.swift */,
 			);
 			name = "ViewControllers + Cells";
 			sourceTree = "<group>";
@@ -338,12 +347,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2A6493D1D79AF2100ACDF85 /* Build configuration list for PBXNativeTarget "TrailLocatorTests" */;
 			buildPhases = (
-				8F4CDD742D2882D9F894E60B /* [CP] Check Pods Manifest.lock */,
 				D2A649221D79AF2100ACDF85 /* Sources */,
 				D2A649231D79AF2100ACDF85 /* Frameworks */,
 				D2A649241D79AF2100ACDF85 /* Resources */,
-				1F75FBF35C64465C1786C939 /* [CP] Embed Pods Frameworks */,
-				A45AE3DECF25C6165F0C0DFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -359,11 +365,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2A649401D79AF2100ACDF85 /* Build configuration list for PBXNativeTarget "TrailLocatorUITests" */;
 			buildPhases = (
-				BA65594F95548A1A04C9C4C3 /* [CP] Check Pods Manifest.lock */,
 				D2A6492D1D79AF2100ACDF85 /* Sources */,
 				D2A6492E1D79AF2100ACDF85 /* Frameworks */,
 				D2A6492F1D79AF2100ACDF85 /* Resources */,
-				8E6B2514855204398B12E885 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -387,7 +391,7 @@
 				TargetAttributes = {
 					D2A6490E1D79AF2100ACDF85 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 5XL94NV2G5;
+						DevelopmentTeam = 8548695HJC;
 						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -443,6 +447,7 @@
 				D2A649751D79B4D500ACDF85 /* CustomCell.xib in Resources */,
 				D2A649181D79AF2100ACDF85 /* Main.storyboard in Resources */,
 				D2A649771D79B4DD00ACDF85 /* DetailCell.xib in Resources */,
+				94C680CF1E72F56900281408 /* AddNewTrailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,22 +480,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		1F75FBF35C64465C1786C939 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocatorTests/Pods-TrailLocatorTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		2378A9ABD2849F616D769502 /* [CP] Copy Pods Resources */ = {
@@ -523,66 +513,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocator/Pods-TrailLocator-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8E6B2514855204398B12E885 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocatorUITests/Pods-TrailLocatorUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8F4CDD742D2882D9F894E60B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A45AE3DECF25C6165F0C0DFF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrailLocatorTests/Pods-TrailLocatorTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BA65594F95548A1A04C9C4C3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -598,6 +528,7 @@
 				D2A6491B1D79AF2100ACDF85 /* TrailLocator.xcdatamodeld in Sources */,
 				D2B5290E1DEE077B00510BDE /* UIView+extensions.swift in Sources */,
 				D2A649681D79B3B500ACDF85 /* SettingsViewController.swift in Sources */,
+				94C680CE1E72F56900281408 /* AddNewTrailViewController.swift in Sources */,
 				D2A649701D79B42F00ACDF85 /* DetailCell.swift in Sources */,
 				D2A6495C1D79B2FC00ACDF85 /* TrailDict.swift in Sources */,
 				D2A649531D79B22B00ACDF85 /* UIColor + Extensions.swift in Sources */,
@@ -607,6 +538,7 @@
 				D2A198E81DE647840008CCC3 /* ProfileViewController.swift in Sources */,
 				D2A649721D79B43E00ACDF85 /* SettingsCell.swift in Sources */,
 				D25FAC111DB42EF0001860A0 /* Parser.swift in Sources */,
+				94C680D11E72F71C00281408 /* AddNewTrail+Extensions.swift in Sources */,
 				D2A649451D79B1ED00ACDF85 /* Reachable.swift in Sources */,
 				D27E6F341D87593E00F5B48C /* Person.swift in Sources */,
 				D2CAC3F01D7EFB920017E909 /* RegisterViewController.swift in Sources */,
@@ -772,7 +704,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TrailLocator/TrailLocator.entitlements;
-				DEVELOPMENT_TEAM = 5XL94NV2G5;
+				DEVELOPMENT_TEAM = 8548695HJC;
 				INFOPLIST_FILE = TrailLocator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com..FindMyTrail;
@@ -790,7 +722,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TrailLocator/TrailLocator.entitlements;
-				DEVELOPMENT_TEAM = 5XL94NV2G5;
+				DEVELOPMENT_TEAM = 8548695HJC;
 				INFOPLIST_FILE = TrailLocator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com..FindMyTrail;
