@@ -12,6 +12,7 @@ import Firebase
 import GoogleMaps
 import FBSDKCoreKit
 import FBSDKLoginKit
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -30,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         UIToolbar.appearance().tintColor = UIColor.tryBlue()
         
         GMSServices.provideAPIKey("AIzaSyAeYQF6v9KtP3mUYdOXp8m_fOYtctnIBEk")
+        GMSPlacesClient.provideAPIKey("AIzaSyAeYQF6v9KtP3mUYdOXp8m_fOYtctnIBEk")
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         

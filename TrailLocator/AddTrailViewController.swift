@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Photos
 import CoreLocation
+import GooglePlaces
 
 class AddTrailViewController: UIViewController {
     
@@ -314,4 +315,8 @@ extension AddTrailViewController: CLLocationManagerDelegate {
         }
         return (0, 0)
     }
+}
+
+extension AddTrailViewController {
+    
 }
